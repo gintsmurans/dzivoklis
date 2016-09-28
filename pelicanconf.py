@@ -22,13 +22,25 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = ()
+LINKS = (
+    ('Laacz ceļ māju', 'https://laacz.lv/category/celam-maju/'),
+    ('Ģimenes māja', 'https://gimenesmaja.wordpress.com/'),
+    ('Ģimenes māja 2', 'http://gimenesmaja.blogspot.com/'),
+    ('Vasarnīca', 'http://vasarnica.blogspot.com/'),
+    ('Koka māja', 'https://kokamaja.wordpress.com/'),
+    ('Būvejot māju', 'https://buvejotmaju.wordpress.com/'),
+    ('Ķiršu parks', 'https://kirsuparks.wordpress.com/'),
+    ('Praktisko padomu bibliotēka', 'http://www.uzbuve.lv/'),
+    ('Ko darītu savādāk', 'http://calis.delfi.lv/forums/(tema/4014436-ko-dzivokli-un-maja-taisitu-savadak/)/'),
+    ('Varu pats', 'http://www.varupats.lv/'),
+    ('Grīdas meistars', 'http://gridasmeistars.lv/')
+)
 
 # Social widget
 SOCIAL = (
     ('facebook', 'https://www.facebook.com/gintsmurans'),
     ('instagram', 'https://www.instagram.com/gintsmurans/', 'instagram'),
-    ('github', 'http://github.com/gintsmurans')
+    ('github', 'http://github.com/gintsmurans'),
 )
 
 # Uncomment following line if you want document-relative URLs when developing
