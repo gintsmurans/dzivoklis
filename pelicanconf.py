@@ -21,6 +21,8 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+STATIC_PATHS = ['images', 'style']
+
 # Blogroll
 LINKS = (
     ('Laacz ceļ māju', 'https://laacz.lv/category/celam-maju/'),
@@ -53,7 +55,7 @@ BOOTSTRAP_THEME = 'united'
 DISPLAY_CATEGORIES_ON_MENU = False
 PYGMENTS_STYLE = 'solarizeddark'
 DISPLAY_BREADCRUMBS = False
-FAVICON = ''
+FAVICON = 'style/favicon.png'
 DISPLAY_ARTICLE_INFO_ON_INDEX = False
 
 DISPLAY_TAGS_ON_SIDEBAR = False
