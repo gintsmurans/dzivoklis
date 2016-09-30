@@ -21,7 +21,8 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-STATIC_PATHS = ['images', 'style']
+STATIC_PATHS = ['images', 'style', 'extra/CNAME']
+EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'}}
 
 # Blogroll
 LINKS = (
