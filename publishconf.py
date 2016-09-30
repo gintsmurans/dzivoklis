@@ -20,5 +20,5 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
 
-DISQUS_SITENAME = 'dzivoklis.gm.lv'
+DISQUS_SITENAME = 'dzivoklis'
 #GOOGLE_ANALYTICS = ""

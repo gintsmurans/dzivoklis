@@ -3,13 +3,10 @@ Date: 2016-09-29 00:59
 Category: Sākums
 Tags: Papīri
 
-[IEVADS]
 Dzīvoklim ir 4 istabas, 3 izolētas, viena caurstaigājama. Visai neērtā veidā vienai no izolētajām istabām ir nenesoša siena ar virtuvi. Mazliet paprātojot, secinam, ka tā siena jāgāž ārā un caurstaigājamā istaba jāpārtaisa par necaurstaigājamu. Lai to izdarītu nepieciešams arhitekta/būvinženiera atzinums, ka siena ko gribam gāzt ārā nav nesošā siena un apstriprinājums būvvaldē par vienkāršoto pārbūvi.
 
-[Arhitekta meklējumi]
 Kamēr gaidījām dzīvokļa pārdevēju, biju jau sācis meklēt arhitektu. Ja kāds saskaras ar grūtībām atrast arhitektu, tad iesaku uzrakstīt uz attiecīgās pašvaldības būvvaldi. Valmieras būvvalde atbildēja nākošajā dienā ar viņiem zināmo arhitektu sarakstu. Sazinājos ar vairākiem līdz (mazliet piepalīdzot atsauksmēm) nonācām līdz Allai Mellēnai (Iesaku - 26557715), kura atbrauca uz dzīvokli, uzklausīja, ieteica dažādus variantus, uztaisīja pārbūves projektu, saskaņoja ar būvinženieri par sienas nojaukšanu, aizveda pati projektu uz būvvaldi un pēc pāris dienām iedeva jau gatavus, parakstītus papīrus, ar pārbūves projektu, un visu pārējo. Es jau biju sagatavojies birokrātijas paraugstundai, bet viss izrādījās daudz, daudz vienkāršāk. Piebilde - Valmieras būvvalde neprasa maksāt par pārbūves plānu apstiprināšanu (vismaz vienkāršoto), tādējādi nākot pretī Valmieras iedzīvotājiem. Forši!
 
-[Plāns]
 Pēc pārbūves projekta apstiprināšanas sāku pamazām macīties sketchup'u:
 ![SketchUp]({filename}/images/3d-1.png)
 
@@ -28,4 +25,4 @@ Ar griestiem dzīvojamai istabai un ventilācijas šahtām:
 * Tikt vaļā no gāzes skaitītāja
 * Pabīdīt vienas no guļamistabas durvīm uz loga pusi, lai būtu vienādi ar otrām un stūrī varētu ielikt plauktu vai skapi.
 
-*Precīzāks un +/- atjaunots plāns apskatāms [stūrakmeņu lapā]({filename}pages/sturakmeni.md).*
+*Precīzāks un +/- atjaunots plāns būs apskatāms [stūrakmeņu lapā]({filename}pages/sturakmeni.md).*
