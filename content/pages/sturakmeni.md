@@ -14,6 +14,23 @@ Date: 2016-09-29 02:00
     * Uzstādīt
         * Apkures sezona sākusies:
             * Jāsavāc mājas iedzīvotāju un padomes paraksti. eh.
+* .. Elektrība
+    * .. Jāmaina viena fāze uz trijām:
+        * √ Elektriķis
+        * √ Iesniegums sadales tīklam
+        * √ Namsaimnieka novērtējums un atļauja
+            * Jāmaina 10mm^2^ vads visā garumā līdz 5. stāvam - ~20m
+        * Cenas izvērtēšana
+        * Gaidam, kad ievilks
+    * Elektriķis ievelk 3 fāzu vadu uz kasti dzīvoklī
+        * Pagaidām pievieno esošo iekšējo tīklu pie jaunās kastes
+    * Savilkt jaunus elektrības vadus pa visu dzīvokli
+        * Velkam zvaigznes veidā
+        * **_Kur liekam, kur neliekam gofras?_**
+        * **_Kāda resnuma vadus jāvelk?_**
+        * **_Vai uzreiz ievelkam arī vājstrāvas vadus un interneta kabeļus?_**
+    * Kopā ar elektriķi savienot visu kopā skapī
+    * Elektrības kastē jābūt vietai rūterim
 * Nomainīt vannas istabas durvis uz koridora pusi (šobrīd ir uz istabas pusi)
     * Aizmūrēt esošās
         * **_Vai šeit būs kāds ekstra elements, piemēram stikls?_**
@@ -54,21 +71,6 @@ Date: 2016-09-29 02:00
     * Vai virtuvē arī nevajag izeju ventilācijas šahtai?
     * Reģipsis
     * **_Vai starp paneli un reģipsi likt kaut ko skaņas izolācijai?_**
-* .. Elektrība
-    * .. Jāmaina viena fāze uz trijām:
-        * √ Elektriķis
-        * √ Iesniegums sadales tīklam
-        * √ Namsaimnieka novērtējums un atļauja
-            * Jāmaina 10mm^2^ vads visā garumā līdz 5. stāvam - ~20m
-        * Cenas izvērtēšana
-        * Gaidam, kad ievilks
-    * Elektriķis ievelk 3 fāzu vadu uz kasti dzīvoklī
-        * Pagaidām pievieno esošo iekšējo tīklu pie jaunās kastes
-    * Savilkt jaunus elektrības vadus pa visu dzīvokli
-        * **_Kur liekam, kur neliekam gofras?_**
-        * **_Vai uzreiz ievelkam arī vājstrāvas vadus un interneta kabeļus?_**
-    * Kopā ar elektriķi savienot visu kopā skapī
-    * Elektrības kastē jābūt vietai rūterim
 * Vannas istaba
     * **_Vannas istabas izkārtojums?_**
     * Santehnika
