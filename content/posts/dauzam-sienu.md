@@ -60,3 +60,6 @@ Lai runā daudz bildes ar aprakstiem:
 
 * Nākamajā dienā pēc durvju aizmūrēšanas tiek aizmūrētas arī vannas istabas durvis, ja pirmais ilga 3-4 nedēļas, tad otrais tika aizmūrēts vienā vakarā. Šķībi, greizi, bet ņemot vērā, ka tiks likts apmetums no abām pusēm, un tāpat tiks līdzināts, tad tas mūs baigi neuztrauc.
 ![Dauzam sienu]({filename}/images/dauzam-sienu-18.jpg)
+
+
+Paldies Ivaram par āmura vicināšanu.
