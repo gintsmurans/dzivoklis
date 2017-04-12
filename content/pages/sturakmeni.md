@@ -13,7 +13,7 @@ Date: 2016-09-29 02:00
 
 
 #### .. Apkure
-* √ [Izvēlēties radiatorus](/radiatori-1-dala.html)
+* √ [Izvēlēties radiatorus]({filename}/posts/radiatori-1-dala.md)
 * √ Nopirkt & Atvest
 * Meistars saka, ka varēs trubas izlocīt zem grīdas
 * Saskaņot montāžu ar meistaru un namsaimnieku
