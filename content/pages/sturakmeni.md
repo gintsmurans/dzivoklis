@@ -112,19 +112,19 @@ Date: 2016-09-29 02:00
 * √ Vannas istabas izkārtojums
 * √ Santehnika
 * √ Kanalizācija
-* + Apmest sienas
-* + Gristi no reģipša
-* + Ieliet grīdu
-* + Traps dušai
+* / Apmest sienas
+* / Gristi no reģipša
+* / Ieliet grīdu
+* / Traps dušai
 
 
 #### Tualete
 * √ Tualetes izkārtojums
 * √ Santehnika
 * √ Kanalizācija
-* + Apmest sienas
-* + Iebūvējamā rāmja siena
-* + Koka skapītis / durvis virs poda rāmja, kur var apskatīti arī skaitītājus
+* / Apmest sienas
+* / Iebūvējamā rāmja siena
+* / Koka skapītis - durvis virs poda rāmja, kur var apskatīti arī skaitītājus
 
 
 #### Virtuve
@@ -132,7 +132,7 @@ Date: 2016-09-29 02:00
 * √ Santehnika
 * Grīda - flīzes
 * Virtuves iekārta
-* + Virtuves tehnika
+* / Virtuves tehnika
 
 
 #### Guļamistaba
@@ -140,7 +140,7 @@ Date: 2016-09-29 02:00
 * √ Pabīdīt vienas no guļamistabas durvīm uz loga pusi, lai būtu vienādi ar otrām un stūrī varētu ielikt plauktu vai skapi.
 
 #### Durvis
-* + Nomainīt visas durvis ar visām kārbām
+* / Nomainīt visas durvis ar visām kārbām
 * √ Nomainīt āra durvis
 
 #### Balkons
@@ -152,6 +152,6 @@ Date: 2016-09-29 02:00
 ---
     √ - Izdarīts;
     .. - Procesā; 
-    + - Daļēji vai visi materiāli ir iegādāti; 
+    / - Daļēji vai visi materiāli ir iegādāti; 
     _slīpraksts_ - jautājumi; 
     X - netiks darīts pagaidām vai vispār
