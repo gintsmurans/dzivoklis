@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 PATH = 'content'
 
 AUTHOR = 'Gints Murāns'
-SITENAME = 'Dzīvoklis'
+SITENAME = 'GM'
 SITEURL = ''
 
 TIMEZONE = 'Europe/Riga'
