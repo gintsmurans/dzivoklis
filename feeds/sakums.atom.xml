@@ -1,56 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>GM - Sākums</title><link href="http://gm.lv/" rel="alternate"></link><link href="http://gm.lv/feeds/sakums.atom.xml" rel="self"></link><id>http://gm.lv/</id><updated>2017-12-13T22:20:00+02:00</updated><entry><title>E-paraksts</title><link href="http://gm.lv/e-paraksts.html" rel="alternate"></link><published>2017-12-13T22:20:00+02:00</published><updated>2017-12-13T22:20:00+02:00</updated><author><name>Gints Murāns</name></author><id>tag:gm.lv,2017-12-13:/e-paraksts.html</id><summary type="html">&lt;p&gt;Ilgi neesmu neko rakstījis un šis nav raksts par būvniecību, bet pēc Kaspara bloga &lt;a href="https://laacz.lv/2017/12/15/eid-un-jaunais-mobilais-e-paraksts/"&gt;raksta&lt;/a&gt; spainītis pārplūda un nolēmu izpētīt sīki un skaidri visu par eprakstu. Tad nu lūk tālāk mani secinājumi.&lt;/p&gt;
-&lt;p&gt;Iesākumā es gribētu pateikt, ka nezinu nevienu valsts veidotu IT projektu, par ko jebkurš cilvēks teiktu: "Wow, labais!". Domāju, ka pietiks tikai ar dažu piemēru minēšanu, lai saparastu par ko es runāju: e-klase, e-veselība, latvija.lv, E-paraksts, nic.lv. Milijoni iztērēti, bet rezultāts briesmīgs. &lt;/p&gt;
-&lt;p&gt;Lai šis subjektīvais pētījums būtu pilnvērtīgs, izdzēsu visu ko varēju atrast par eparakstu, gemalto, utt. &lt;/p&gt;
-&lt;h4&gt;Mērķis&lt;/h4&gt;
-&lt;p&gt;Parakstīt dokumentus izmantojot elektronisko parakstu un ielogoties portālos kur to ņem pretī un to visu darīt pēc iespējas attālināti. 
-Pieņemam, ka man jau ir ID Karte, kartē ir aktivizēts eParaksts, un aptuveni saprotu kam tas ir vajadzīgs. Un vēl macOS High Sierra operētājsistēma.&lt;/p&gt;
-&lt;p&gt;Lai parakstītu dokumentus man ir divi &lt;a href="https://www.eparaksts.lv/lv/palidziba/eparaksta-abc/"&gt;varianti&lt;/a&gt; - "Kā saņemt eParakstu?" (nevar ielinkot konkrētu FAQ sadaļu - jāsameklē pašam):&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Virtuālais paraksts&lt;/li&gt;
-&lt;li&gt;eID karte&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4&gt;Virtuālais paraksts&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Saņemšanas varianti:&lt;ul&gt;
-&lt;li&gt;Saņemt var "Apliecinot identitāti klātienē kādā no Klientu apkalpošanas centriem Rīgā" - atverot linku ir tikai viens apkalpošanas centrs - lūdzu izsakaties …&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;Ilgi neesmu neko rakstījis un šis nav raksts par būvniecību, bet pēc Kaspara bloga &lt;a href="https://laacz.lv/2017/12/15/eid-un-jaunais-mobilais-e-paraksts/"&gt;raksta&lt;/a&gt; spainītis pārplūda un nolēmu izpētīt sīki un skaidri visu par eprakstu. Tad nu lūk tālāk mani secinājumi.&lt;/p&gt;
-&lt;p&gt;Iesākumā es gribētu pateikt, ka nezinu nevienu valsts veidotu IT projektu, par ko jebkurš cilvēks teiktu: "Wow, labais!". Domāju, ka pietiks tikai ar dažu piemēru minēšanu, lai saparastu par ko es runāju: e-klase, e-veselība, latvija.lv, E-paraksts, nic.lv. Milijoni iztērēti, bet rezultāts briesmīgs. &lt;/p&gt;
-&lt;p&gt;Lai šis subjektīvais pētījums būtu pilnvērtīgs, izdzēsu visu ko varēju atrast par eparakstu, gemalto, utt. &lt;/p&gt;
-&lt;h4&gt;Mērķis&lt;/h4&gt;
-&lt;p&gt;Parakstīt dokumentus izmantojot elektronisko parakstu un ielogoties portālos kur to ņem pretī un to visu darīt pēc iespējas attālināti. 
-Pieņemam, ka man jau ir ID Karte, kartē ir aktivizēts eParaksts, un aptuveni saprotu kam tas ir vajadzīgs. Un vēl macOS High Sierra operētājsistēma.&lt;/p&gt;
-&lt;p&gt;Lai parakstītu dokumentus man ir divi &lt;a href="https://www.eparaksts.lv/lv/palidziba/eparaksta-abc/"&gt;varianti&lt;/a&gt; - "Kā saņemt eParakstu?" (nevar ielinkot konkrētu FAQ sadaļu - jāsameklē pašam):&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Virtuālais paraksts&lt;/li&gt;
-&lt;li&gt;eID karte&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4&gt;Virtuālais paraksts&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Saņemšanas varianti:&lt;ul&gt;
-&lt;li&gt;Saņemt var "Apliecinot identitāti klātienē kādā no Klientu apkalpošanas centriem Rīgā" - atverot linku ir tikai viens apkalpošanas centrs - lūdzu izsakaties pareizi.&lt;/li&gt;
-&lt;li&gt;Vai arī "Apliecinot identitāti klātienē kādā no LMT vai Trodeks Klientu centriem" iegūsttot kaut ko ko sauc par "Mobilais kods".&lt;/li&gt;
-&lt;li&gt;"Pilnībā attālināti" - "SEB Ibankas, eParaksta viedkartes, kā arī eID kartes lietotājiem". Pag, kas ir eParaksta viedkarte? Aizejam uz norādīto &lt;a href="https://www.eparaksts.lv/lv/virtualais-eparaksts/ka-sanemt-virtualo-eparakstu-1/"&gt;linku&lt;/a&gt;. Apraksta nav. Meklēju .. www.eparaksts.lv neizdodas atrast, dodamies uz googli. Nonākam šajā &lt;a href="https://www.eparaksts.lv/lv/biznesam/eparaksts-viedkarte/eparaksts-viedkarte/"&gt;sadaļā&lt;/a&gt;. Izskatās, ka tikai biznesam, maksā, johaidī, 52.01 EUR. Saprotu ka man to nevajag, aizmirstu par to.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Tātad, ja es negribu doties uz kādu no apkalpošanas centriem, tad man paliek divi varianti kā tikt pie Virtuālā Paraksta: &lt;strong&gt;SEB internetbanka&lt;/strong&gt; un &lt;strong&gt;eID&lt;/strong&gt;. Bet pag, kas tad ir eID? Mazliet pameklējam un izrādās, ka visa pasaule identifikācijas kartes sauc par "ID Card", bet latvijā tās sauc par eID kartēm. Atverot https://www.id.ee/ redzam, ka arī igauņi tās sauc par ID kartēm. Tātad, lai turpmāk nejauktos, eID karte ir tas pats kas ID karte. "eID Karte" == "ID Karte". Forši, forši.&lt;/p&gt;
-&lt;p&gt;Pa starpai ieraugu, ka ir tāda lieta kā eZīmogs. Kas tas tāds? Pēc &lt;a href="https://www.eparaksts.lv/lv/palidziba/eparaksta-abc/"&gt;apraksta&lt;/a&gt; ("Kas ir eZīmogs?" - nevar ielinkot, jāsameklē pašam) - nekas svarīgs man kā privātpersonai.
-Tad vēl ieraugu: "Pārbaudīt Latvijas Pasta e-parakstu". Ok, kas ir Latvijas Pasta e-paraksts? Googlē atrodu: "līdz ar pēdējās Latvijas Pasta izdotās viedkartes derīguma beigām tiek likvidēta Latvijas Pasta Sertifikācijas institūcija" - kaut kas vecs. Ok, neattiecas uz mani, aizmirstu.&lt;/p&gt;
-&lt;p&gt;Atgriežoties pie virtuālā paraksta. Pieņemot, ka man ir Swedbanka, man atliek viens variants: eID, jeb ID karte.
-Lai tiktu pie virtuālā paraksta, man jādara šis: "Ienāciet portālā www.eparaksts.lv, autentificējoties ar eID kartes datiem;". Spiežu "Ieiet" -&amp;gt; "Viedkarte" -&amp;gt; "Notikusi kļūda.":&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Lūdzu, pārliecinieties, ka Jūsu dators ir sagatavots darbam ar elektronisko parakstu:
-
-Uzstādīti viedkaršu lasītāja draiveri;
-Karte korekti ievietota viedkaršu lasītājā;
-Uzstādīta programma eParakstītājs 3.0;
-Uzstādīti kartes draiveri - Latvia eID PIn Tool (eID kartei) vai GemSafe (eParaksts 5G viedkartei);
-Interneta pārlūks sagatavots darbam ar eParakstu.
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Šajā brīdī man rodas aizdomas, ka lai tiktu pie Virtuālā paraksta, man ir vajadzīgs viss kas nepieciešams, lai parakstītu dokumentus ar ID karti.&lt;/p&gt;
-&lt;h4&gt;&lt;s&gt;eID&lt;/s&gt; ID Karte&lt;/h4&gt;
-&lt;p&gt;Vispārēja saprašana: Man vajadzīgs karšu lasītājs, kuru pieslēdzu datoram, ielieku karti, kaut kāds softs paprasa pinkodu un autorizē vai paraksta dokumentu.&lt;/p&gt;</content><category term="Valsts"></category></entry><entry><title>Elektrība 1. daļa - pieslēgums un plānošana</title><link href="http://gm.lv/elektriba-1-dala-pieslegums-un-planosana.html" rel="alternate"></link><published>2016-12-04T03:15:00+02:00</published><updated>2016-12-04T03:15:00+02:00</updated><author><name>Gints Murāns</name></author><id>tag:gm.lv,2016-12-04:/elektriba-1-dala-pieslegums-un-planosana.html</id><summary type="html">&lt;p&gt;Kad sākām remontu par elektrību skaidrs bija tikai tas, ka vajag drošinātājus. Tagad pēc ļoti aktīvas googlēšanas un &lt;a href="https://gimenesmaja.wordpress.com/"&gt;Ģimenes māja&lt;/a&gt; lasīšanas, šķiet, ka ir izkristalizējies ko gribu un ko nē.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>GM - Sākums</title><link href="http://gm.lv/" rel="alternate"></link><link href="http://gm.lv/feeds/sakums.atom.xml" rel="self"></link><id>http://gm.lv/</id><updated>2016-12-04T03:15:00+02:00</updated><entry><title>Elektrība 1. daļa - pieslēgums un plānošana</title><link href="http://gm.lv/elektriba-1-dala-pieslegums-un-planosana.html" rel="alternate"></link><published>2016-12-04T03:15:00+02:00</published><updated>2016-12-04T03:15:00+02:00</updated><author><name>Gints Murāns</name></author><id>tag:gm.lv,2016-12-04:/elektriba-1-dala-pieslegums-un-planosana.html</id><summary type="html">&lt;p&gt;Kad sākām remontu par elektrību skaidrs bija tikai tas, ka vajag drošinātājus. Tagad pēc ļoti aktīvas googlēšanas un &lt;a href="https://gimenesmaja.wordpress.com/"&gt;Ģimenes māja&lt;/a&gt; lasīšanas, šķiet, ka ir izkristalizējies ko gribu un ko nē.&lt;/p&gt;
 &lt;p&gt;Sākām ar elektriķa atrašanu, ieteica mums tādu Ivanu, kurš izrādās strādā sadales tīklos un tieši atbild par mūsu rajonu. Atnāca, izstāstīja, aizgāja. Sapratām, ka labāk būtu 3 fāzes, jo ieslēdzot plīti, tv un putekļusūcēju visticamāk, ka sitīs ārā drošinātājus. Ivans iedeva kontaktus sadales tīkliem, kur interesēties par pieslēguma maiņu. Uzzvanu sadales tīkliem, kur man paskaidro, ka labāk aizpildīt formu, ko var atrast viņu &lt;a href="https://www.e-st.lv/lv/private/"&gt;mājaslapā&lt;/a&gt;. Aizpildu, aizsūtu elektroniski parakstītu iesniegumu uz e-pastu par to, ka gribu palielināt jaudu uz 3 fāzēm un 20A, pēc kāda laika ir atbilde, ka tas ir iespējams, bet vajadzēs no namsaimnieka atļauju. Tālāk interesējos namsaimniekā un tiek norunāts, ka pie manis ieradīsies meistars kurš novērtēs esošo stāvokli. Meistars ierodas un novērtē, ka jāmaina viss stāvvads, 4x10mm vads. Pēc debatēm ar citiem un pašam savām pārdomām, nolemjam atstāt esošo pieslēgumu, tikai nomainīt jaunus vadus no skaitītāja līdz dzīvoklim, un vilkt jaunos vadus ar domu, ka kādreiz varētu …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Kad sākām remontu par elektrību skaidrs bija tikai tas, ka vajag drošinātājus. Tagad pēc ļoti aktīvas googlēšanas un &lt;a href="https://gimenesmaja.wordpress.com/"&gt;Ģimenes māja&lt;/a&gt; lasīšanas, šķiet, ka ir izkristalizējies ko gribu un ko nē.&lt;/p&gt;
 &lt;p&gt;Sākām ar elektriķa atrašanu, ieteica mums tādu Ivanu, kurš izrādās strādā sadales tīklos un tieši atbild par mūsu rajonu. Atnāca, izstāstīja, aizgāja. Sapratām, ka labāk būtu 3 fāzes, jo ieslēdzot plīti, tv un putekļusūcēju visticamāk, ka sitīs ārā drošinātājus. Ivans iedeva kontaktus sadales tīkliem, kur interesēties par pieslēguma maiņu. Uzzvanu sadales tīkliem, kur man paskaidro, ka labāk aizpildīt formu, ko var atrast viņu &lt;a href="https://www.e-st.lv/lv/private/"&gt;mājaslapā&lt;/a&gt;. Aizpildu, aizsūtu elektroniski parakstītu iesniegumu uz e-pastu par to, ka gribu palielināt jaudu uz 3 fāzēm un 20A, pēc kāda laika ir atbilde, ka tas ir iespējams, bet vajadzēs no namsaimnieka atļauju. Tālāk interesējos namsaimniekā un tiek norunāts, ka pie manis ieradīsies meistars kurš novērtēs esošo stāvokli. Meistars ierodas un novērtē, ka jāmaina viss stāvvads, 4x10mm vads. Pēc debatēm ar citiem un pašam savām pārdomām, nolemjam atstāt esošo pieslēgumu, tikai nomainīt jaunus vadus no skaitītāja līdz dzīvoklim, un vilkt jaunos vadus ar domu, ka kādreiz varētu būt 3 fāzes, ja ar vienu būs par maz. Un šķiet, ka es ar tām 20A mazliet pārspīlēju, varbūt mainot uz 3 fāzu 16A būtu ok ar tiem pašiem vadiem, bet tagad tas tiks atstāts uz vēlāku laiku jebkurā gadījumā. Prieks par to, ka šis viss neivlkās mēnešiem ilgi, bet notika diezgan raiti.&lt;/p&gt;
 &lt;p&gt;Vadu vilkšanas mazais plāns:&lt;/p&gt;
