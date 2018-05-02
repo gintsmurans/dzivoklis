@@ -2,6 +2,7 @@ Title: Pārplānošana
 Date: 2016-09-29 00:59
 Category: Sākums
 Tags: Papīri
+Lang: lv
 
 Dzīvoklim ir 4 istabas, 3 izolētas, viena caurstaigājama. Visai neērtā veidā vienai no izolētajām istabām ir nenesoša siena ar virtuvi. Mazliet paprātojot, secinam, ka tā siena jāgāž ārā un caurstaigājamā istaba jāpārtaisa par necaurstaigājamu. Lai to izdarītu nepieciešams arhitekta/būvinženiera atzinums, ka siena ko gribam gāzt ārā nav nesošā siena un apstriprinājums būvvaldē par vienkāršoto pārbūvi.
 

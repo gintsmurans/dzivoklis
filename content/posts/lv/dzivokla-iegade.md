@@ -2,6 +2,7 @@ Title: Dzīvokļa iegāde
 Date: 2016-09-28 21:15
 Category: Sākums
 Tags: Papīri
+Lang: lv
 
 Beidzot saņēmos un sakonfigurēju github lapu dzīvokļa remonta blogam. Dzīvoklī remonts tiek veikts jau kādu laiku, bet sāksim visu no sākuma.
 

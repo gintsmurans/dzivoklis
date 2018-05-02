@@ -2,6 +2,7 @@ Title: Elektrība 1. daļa - pieslēgums un plānošana
 Date: 2016-12-04 03:15
 Category: Sākums
 Tags: Elektrība
+Lang: lv
 
 Kad sākām remontu par elektrību skaidrs bija tikai tas, ka vajag drošinātājus. Tagad pēc ļoti aktīvas googlēšanas un [Ģimenes māja](https://gimenesmaja.wordpress.com/) lasīšanas, šķiet, ka ir izkristalizējies ko gribu un ko nē.
 

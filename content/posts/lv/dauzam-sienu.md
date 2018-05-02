@@ -2,6 +2,7 @@ Title: Dauzam sienu
 Date: 2016-12-04 01:20
 Category: Sākums
 Tags: Būvgruži
+Lang: lv
 
 Pirmdien sāka strādāt meistars līdz ar to parādījies mazliet vairāk brīvs laiks, lai gan jāsaka, ka tagad krietni vairāk laika jāvelta plānošanai un iespējams laika trūkums būs tieši tāds pats kā pirms tam.
 

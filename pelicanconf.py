@@ -10,6 +10,16 @@ SITEURL = ''
 
 TIMEZONE = 'Europe/Riga'
 DEFAULT_LANG = 'lv'
+LOCALE = 'lv_LV.UTF-8'
+
+I18N_SUBSITES = {
+    'en': {
+        'SITENAME': 'GM',
+        'AUTHOR': 'Gints Murāns',
+        'LOCALE': 'en_US.UTF-8',
+        'STATIC_PATHS': ['images', 'extra/favicon.png']
+    }
+}
 
 DEFAULT_PAGINATION = 10
 SUMMARY_MAX_LENGTH = 180
@@ -25,8 +35,14 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-STATIC_PATHS = ['images', 'style', 'extra/CNAME']
-EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'}}
+PLUGIN_PATHS = ['plugins']
+PLUGINS = ['i18n_subsites']
+
+STATIC_PATHS = ['images', 'extra/CNAME', 'extra/favicon.png']
+EXTRA_PATH_METADATA = {
+    'extra/CNAME': {'path': 'CNAME'},
+    'extra/favicon.png': {'path': 'favicon.png'}
+}
 
 # Blogroll
 LINKS = (
@@ -60,7 +76,7 @@ BOOTSTRAP_THEME = 'united'
 DISPLAY_CATEGORIES_ON_MENU = False
 PYGMENTS_STYLE = 'solarizeddark'
 DISPLAY_BREADCRUMBS = False
-FAVICON = 'style/favicon.png'
+FAVICON = 'favicon.png'
 DISPLAY_ARTICLE_INFO_ON_INDEX = False
 
 DISPLAY_TAGS_ON_SIDEBAR = False

@@ -2,6 +2,7 @@ Title: Radiatori 1. daļa
 Date: 2016-12-04 02:05
 Category: Sākums
 Tags: Apkure
+Lang: lv
 
 Kādu apkures veidu izvēlēties? Briesmīgi sarežģīts jautājums. Tika pat apsvērts variants ar siltajām grīdām, bet dzīvoklī nav īsti vērts + betonēt diezko biezu kārtu arī nedrīkst dēļ svara. Paliekam pie radiatoriem un centrālapkures. Nākamais jautājums: Kādus radiatorus?
 

@@ -1,28 +1,29 @@
-Title: Stūrakmeņi
+Title: Dzīvokļa remonts
 Date: 2016-09-29 02:00
+Lang: lv
 
-    Pēdējo reizi atjaunots: 12.04.2017
-    Aptuveni izdarīts: 85%
+    Pēdējo reizi atjaunots: 02.05.2018
+    Aptuveni izdarīts: 100%
 
 
 #### Visādi
 * √ Tikt vaļā no gāzes skaitītāja
 * √ Nojaukt dzīvojamās istabas sienu, apvienojot virtuvi ar dzīvojamo istabu. 
     * √ Iznest būvgružus
-* Otrā koridorī plaukts ar iebūvētu galdu
+* X Otrā koridorī plaukts ar iebūvētu galdu
 
 
 #### .. Apkure
 * √ [Izvēlēties radiatorus]({filename}/posts/radiatori-1-dala.md)
 * √ Nopirkt & Atvest
-* Meistars saka, ka varēs trubas izlocīt zem grīdas
-* Saskaņot montāžu ar meistaru un namsaimnieku
-* X Uzstādīt
-    * Apkures sezona sākusies, ja grādi iet zem 0 neļauj mainīt
+* √ Meistars saka, ka varēs trubas izlocīt zem grīdas
+* √ Saskaņot montāžu ar meistaru un namsaimnieku
+* √ Uzstādīt
+    * √ Apkures sezona sākusies, ja grādi iet zem 0 neļauj mainīt
 
 
 #### .. Elektrība
-* .. Jāmaina viena fāze uz trijām:
+* √ Jāmaina viena fāze uz trijām:
     * √ Elektriķis
     * √ Iesniegums sadales tīklam
     * √ Namsaimnieka novērtējums un atļauja
@@ -30,8 +31,9 @@ Date: 2016-09-29 02:00
     * X Cenas izvērtēšana
     * X Gaidam, kad ievilks
     * X Pagaidām netiks darīts, jo jāmaina viss stāvvads līdz 5. stāvam
-* Elektriķis ievelk 3 fāzu vadu uz kasti dzīvoklī
-* Savilkt jaunus elektrības vadus pa visu dzīvokli
+    * √ Nemainot jaudu tika palielināts fāžu skaits 2018. gadā.
+* √ Elektriķis ievelk 3 fāzu vadu uz kasti dzīvoklī
+* √ Savilkt jaunus elektrības vadus pa visu dzīvokli
     * √ Velkam zvaigznes veidā
     * √ Pa grīdu vadus gofrās
     * √ Kāda resnuma vadus jāvelk?
@@ -42,7 +44,7 @@ Date: 2016-09-29 02:00
         * √ Sensoru kabeļi uz istabu stūri priekš kustību sensoriem vai iespējams kamerai vai iespējams kādam citam pašizdomātam sensoram.
         * √ TV kabeli uz lielās istabas tv rozetēm, maz ticams, bet ja nu tomēr rodas tāda vajadzība.
     * √ Vai var elektrības skapi likt aiz sienas otrā pusē?
-* .. Savienot visu skapī
+* √ Savienot visu skapī
 * X Elektrības kastē jābūt vietai rūterim kā arī iespējamam kontrolierim
 * √ Noplūdes automāts uz visu dzīvokli
 * √ Drošinātāji sadaļiti pa grupām uz katru istabu vienu + plītij un ledusskapim atsevišķi
@@ -61,15 +63,15 @@ Date: 2016-09-29 02:00
 * √ Izvēlēties grīdas segumu
     * X 3 slāņu parketa dēļi
     * Lamināts
-* Grīdas seguma ieklāšana
-* Virtuvē flīzes
+* √ Grīdas seguma ieklāšana
+* √ Virtuvē flīzes
 * √ Vai koridorī liekam flīzes, vai varbūt tomēr kādu izturīgu laminātu?
     * √ Lamināts
 * X Cik biezu dēli vajag, ja liekam uz melnās grīdas?
 
 
 #### Sienas
-* Gala (logu) sienas:
+* √ Gala (logu) sienas:
     * √ Siltināt nav nepieciešams, māja no ārpuses ir siltināta
     * √ Apmest, vai likt reģipsi
         * √ Apmest ar mp75
@@ -112,27 +114,27 @@ Date: 2016-09-29 02:00
 * √ Vannas istabas izkārtojums
 * √ Santehnika
 * √ Kanalizācija
-* / Apmest sienas
-* / Gristi no reģipša
-* / Ieliet grīdu
-* / Traps dušai
+* √ Apmest sienas
+* √ Griesti no reģipša
+* √ Ieliet grīdu
+* √ Traps dušai
 
 
 #### Tualete
 * √ Tualetes izkārtojums
 * √ Santehnika
 * √ Kanalizācija
-* / Apmest sienas
-* / Iebūvējamā rāmja siena
-* / Koka skapītis - durvis virs poda rāmja, kur var apskatīti arī skaitītājus
+* √ Apmest sienas
+* √ Iebūvējamā rāmja siena
+* √ Koka skapītis - durvis virs poda rāmja, kur var apskatīti arī skaitītājus
 
 
 #### Virtuve
 * √ Virtuves izkārtojums
 * √ Santehnika
-* Grīda - flīzes
-* Virtuves iekārta
-* / Virtuves tehnika
+* √ Grīda - flīzes
+* √ Virtuves iekārta
+* √ Virtuves tehnika
 
 
 #### Guļamistaba
@@ -140,13 +142,14 @@ Date: 2016-09-29 02:00
 * √ Pabīdīt vienas no guļamistabas durvīm uz loga pusi, lai būtu vienādi ar otrām un stūrī varētu ielikt plauktu vai skapi.
 
 #### Durvis
-* / Nomainīt visas durvis ar visām kārbām
+* √ Nomainīt visas durvis ar visām kārbām
 * √ Nomainīt āra durvis
 
 #### Balkons
-* Esošais betona segums drūp nost - nav pareizs slīpums?
-* Terases dēļi
-* Ik pa laikam balkona durvis sačakarējas un nevar normāli attaisīt.
+* √ Esošais betona segums drūp nost - nav pareizs slīpums?
+* X Terases dēļi
+* √ Ielikām flīzes
+* √ Ik pa laikam balkona durvis sačakarējas un nevar normāli attaisīt.
 
 
 ---
