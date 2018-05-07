@@ -3,7 +3,6 @@ Date: 2018-05-03 01:21
 Category: Sākums
 Tags: Mašīnas,Fiat,VW Beetle
 Lang: lv
-Status: draft
 
 Turpinājums [1. daļai]({filename}fiat-500x-1-dala.md)
 
@@ -36,14 +35,14 @@ Vēlviena lieta, kas man patīk ir kravas vilkšana. Esmu ar piekabi krustus š�
 Mazliet par sliktājām lietām. 
 
 * Viena no tādām ir pagrieziena un logutīrītāja slēdži. Pamēģinot jaunos škodas/vw, fiata slēdži liekas kā būtu iesparusti gludi strupi koka zariņi. Līdz ar to ir jāpierod, ka slēdzot pagrieziena rādītāju, to nevar aizķert aiz malas, bet ir jāsaķer diezgan pamatīgi. Pie tā, protams, pierod, bet, iekāpjot kolēģa škodā, tas tiek atgādināts pirmajā krustojumā.
-* Dažkārt liekas, ka pietrūkst vietas, lai gan salons ir plašāks par V50, ar bērniem, bērnu mantām, jakām, cepurēm, savām jakām, utt dažākārt esmu sevi pieķēris pie domas, mazliet pietrūkst vietas. Bagāžnieks savukārt līdz šim nav pievīlis, ņemot vērā cik liela ir mašīna ir pat ļoti ok. 
-* Salonā varēja būt mazliet klusāks. Pa pilsētu ir ok, bet izbraucot ārpus pilsētas, sāk diezgan jūtami dzīrdēt vēja un riepu skaņu. Es pat teiktu, ka riepu skaņu vairāk par vēju.
+* Dažkārt liekas, ka pietrūkst vietas, lai gan salons ir plašāks par V50, ar bērniem, bērnu mantām, jakām, cepurēm, savām jakām, utt dažākārt esmu sevi pieķēris pie domas - mazliet pietrūkst vietas. Bagāžnieks savukārt līdz šim nav pievīlis, ņemot vērā cik liela ir mašīna ir pat ļoti ok. 
+* Salonā varēja būt mazliet klusāks. Pa pilsētu ir ok, bet izbraucot ārpus pilsētas, sāk diezgan jūtami dzirdēt vēja un riepu skaņu. Es pat teiktu, ka riepu skaņu vairāk par vēju.
 * Vidējais patēriņš - kombinēts - brošūrās ir norādīts 6.4l/100km, man nesanāk mazāk par 7.5 un es teiktu drīzāk, kas tas ir 8.1.
-* Pēdējā lieta, kas mani kaitina visvairāk (pamatīgi besī būtu precīzāk teikts) ir 1.6 atmosfēriskais motors, jeb motors bez turbīnas. Pieradis pie dīzeļiem ar turbīnu, it īpaši pēdējā - volvo D5, dažkārt liekas, ka jāspiež ārā pēdējā sula no mašīnas, lai tiktu līdzi satiksmei. Jauda ir pietiekama, kalnā var mierīgi uzbraukt, piekabes pavilkt - bez problēmām, bet kad uz šosejas ir jāapdzen, tad bez likšanas 4. ātrumā ir vajadzīgs ļoti garšs ceļa gabals.
+* Pēdējā lieta, kas mani kaitina visvairāk (pamatīgi besī būtu precīzāk teikts) ir 1.6 atmosfēriskais motors, jeb motors bez turbīnas. Pieradis pie dīzeļiem ar turbīnu, it īpaši pēdējā - volvo D5, dažkārt liekas, ka jāspiež ārā pēdējā sula no mašīnas, lai tiktu līdzi satiksmei. Jauda ir pietiekama, kalnā var mierīgi uzbraukt, piekabes pavilkt - bez problēmām, bet kad uz šosejas ir jāapdzen, tad bez likšanas 4. ātrumā ir vajadzīgs ļoti garšs ceļa posms.
 
 ----
 
-Kopumā es esmu ļoti priecīgs par pirkumu un šodien droši varu teikt, ka **labāk braucu ar jaunu Fiatu nekā ar vidēji vecu Volvo, Audi, BMW**. Ja kāds man prasa, vai es otreiz pirku, tad es domāju, ka noteikti pirktu, tikai ar citu motoru. Piemēram - "500X 1.4 170 MAir AWD AT Cross". No otras puses, nez kā būtu ilgtermiņā ar automātisko ātrumkārbu. Pēc manas pieredzes, manuālim ir daudz, daudz, daudz mazāki izdevumi.
+Kopumā es esmu ļoti priecīgs par pirkumu un šodien droši varu teikt, ka **labāk braucu ar jaunu Fiatu nekā ar vidēji vecu Volvo, Audi, BMW**. Ja kāds man prasa, vai es otreiz pirku tādu pašu, tad es domāju, ka noteikti pirktu, tikai ar citu motoru. Piemēram - "500X 1.4 170 MAir AWD AT Cross".
 
 ![500X]({filename}/images/fiat-500-3.jpg)
 
