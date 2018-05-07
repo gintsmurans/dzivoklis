@@ -17,7 +17,8 @@ I18N_SUBSITES = {
         'SITENAME': 'GM',
         'AUTHOR': 'Gints Murāns',
         'LOCALE': 'en_US.UTF-8',
-        'STATIC_PATHS': ['images', 'extra/favicon.png']
+        'STATIC_PATHS': ['images', 'extra/favicon.png'],
+        'LINKS': (),
     }
 }
 
