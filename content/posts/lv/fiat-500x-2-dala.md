@@ -44,6 +44,9 @@ Mazliet par sliktājām lietām.
 
 Kopumā es esmu ļoti priecīgs par pirkumu un šodien droši varu teikt, ka **labāk braucu ar jaunu Fiatu nekā ar vidēji vecu Volvo, Audi, BMW**. Ja kāds man prasa, vai es otreiz pirku tādu pašu, tad es domāju, ka noteikti pirktu, tikai ar citu motoru. Piemēram - "500X 1.4 170 MAir AWD AT Cross".
 
+Turpinājums sekos...
+
+
 ![500X]({filename}/images/fiat-500-3.jpg)
 
 ![500X]({filename}/images/fiat-500-4.jpg)
