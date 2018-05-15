@@ -3,6 +3,7 @@ Date: 2018-05-03 01:21
 Category: Sākums
 Tags: Mašīnas,Fiat,VW Beetle
 Lang: lv
+og_image: images/fiat-500-2.jpg
 
 Turpinājums [1. daļai]({filename}fiat-500x-1-dala.md)
 

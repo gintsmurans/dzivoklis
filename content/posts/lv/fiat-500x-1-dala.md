@@ -3,6 +3,7 @@ Date: 2018-05-03 00:30
 Category: Sākums
 Tags: Mašīnas,Fiat,VW Beetle
 Lang: lv
+og_image: images/fiat-500-2.jpg
 
 Pirms kāda laika, nu jau 2 gadiem, nopirkām papildus automašīnu - Fiat 500x - jaunu, no salona. Kāpēc šāda izvēle? Lasi tālāk.
 
