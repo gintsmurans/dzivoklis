@@ -2,6 +2,11 @@ body {
     padding-top: 70px;
 }
 
+blockquote {
+    font-size: 13px;
+    color: #777;
+}
+
 #sidebar .list-group, #sidebar .list-group-item {
     background-color: transparent;
 }

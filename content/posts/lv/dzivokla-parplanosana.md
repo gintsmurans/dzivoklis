@@ -14,16 +14,16 @@ Pēc pārbūves projekta apstiprināšanas sāku pamazām macīties sketchup'u:
 Ar griestiem dzīvojamai istabai un ventilācijas šahtām:
 ![SketchUp]({filename}/images/3d-2.png)
 
-Īsumā plāns ir šāds: 
+Īsumā plāns ir šāds:
 
-* Nojaukt sarkano sienu, apvienojot virtuvi ar dzīvojamo istabu. 
-* Uzbūvēt zaļo sienu, izveidojot izolētu guļamistabu. 
-* Izplēst ārā vecās grīdas, aizpildīt, lai nav tukšas un neskan kā mucā. 
+* Nojaukt sarkano sienu, apvienojot virtuvi ar dzīvojamo istabu.
+* Uzbūvēt zaļo sienu, izveidojot izolētu guļamistabu.
+* Izplēst ārā vecās grīdas, aizpildīt, lai nav tukšas un neskan kā mucā.
 * Savilkt jaunus elektrības vadus
-* Nomainīt radiatorus. 
+* Nomainīt radiatorus.
 * Nomainīt vannas istabas durvis uz koridora pusi (šobrīd ir uz istabas pusi)
 * Uzbūvēt prakstiski pa jaunu vannas istabu, tualeti un virtuvi
 * Tikt vaļā no gāzes skaitītāja
 * Pabīdīt vienas no guļamistabas durvīm uz loga pusi, lai būtu vienādi ar otrām un stūrī varētu ielikt plauktu vai skapi.
 
-*Precīzāks un +/- atjaunots plāns būs apskatāms [stūrakmeņu lapā]({filename}pages/sturakmeni.md).*
+*Precīzāks un +/- atjaunots plāns būs apskatāms [Dzīvokļa remonts lapā]({filename}pages/lv/sturakmeni.md).*
