@@ -4,23 +4,25 @@ Category: Games
 Tags: Games, Pubg
 Lang: en
 
+Update (2019-05-03): Few typo and speeling fixes.
+
 So I have been fighting with fps drops and stuttering issues for quite a while now, and I have a decent system. Here is what I have found. This guide is for nvidia with a better GPU than CPU (apparently that stuff matters), and most probably won't work for everyone, but you can find ideas to increase performance.
 
 1. Avoid hdd, go for ssd or even better M.2 NMVE drive. Last one loads games, and system it self, million times faster.
-2. Go for performance middle ground. For example, download OpenHardwareMonitor, check that CPU and GPU utilisation, is somewhat consistent. Later on that.
-3. Make sure you have a decent mouse and keyboard, especially mouse. Upgrading generic mouse to SteelSeries Rival was like a day versus night.
+2. Go for performance middle ground. For example, download OpenHardwareMonitor, check that CPU and GPU utilisation is somewhat consistent. Later on that.
+3. Make sure you have a decent mouse and keyboard, especially mouse. Upgrading generic mouse to SteelSeries Rival was like a day versus night for me.
 4. If it is an option for you, go for a 144Hz monitor. Even if your computer can handle only 90fps, its still a lot better than 60Hz.
 5. Turn off the G-Sync and V-Sync, it does make the game to look quite a bit smoother, but if you want maximum performance, I suggest turning it off.
 6. Always use Fullscreen mode, without windows. It drains CPU a LOT.
-7. Setup page file. Here is one example how to do it: https://www.geeksinphoenix.com/blog/post/2016/05/10/how-to-manage-windows-10-virtual-memory.aspx But set same Initial size and Maximum size. If you have 4GB - don't play this game. If you have 8GB, set it to 4069 - no point setting it any larger.
+7. Setup page file. Here is one example how to do it: [Page File Setup](https://www.geeksinphoenix.com/blog/post/2016/05/10/how-to-manage-windows-10-virtual-memory.aspx). Set same Initial size and Maximum size. If you have 4GB - don't play this game. If you have 8GB, set it to 4069 - no point setting it any larger.
 8. Make sure your power settings are set to Maximum performance.
 9. Usually you would think the bigger is better, but, as it turns out, thats not the case with mouse and keyboard polling rates. Decreasing polling rate from 1000hz to 500hz (I did it on both - mouse and keyboard) seems to be the single most effective way that reduced lagging feeling for me. I think what is happening here is that when a mouse is constantly sending movement updates at 1kHz, my cpu (or game?) couldn't handle it, thats why when I was clicking mouse buttons, they always felt like a bit delayed. At first I thought it is monitor being at 60Hz. After getting 144Hz monitor, I thought it is cpu, that cannot handle video processing. After smoothing fps out, I thought its nvidia settings. After tweaking those, I thought it is a buggy ssd, after upgrading ssd to m.2 it actually seemed better. Who knows. Then somebody on reddit suggested to look into mouse polling rate, and turns out that was the issue. Before this change I had set fps limit to 94, but in-game it was around 88-90. After changing polling rate it is now quite steady at 94.
 
 **GPU vs CPU**
 
 This is also a big one. If you have a good GPU, but not so good CPU, and no limit on fps and graphics settings on the low side, you will notice stuttering, lagging, ping drops, etc. Thats because GPU says: I'm ready, give me more, but CPU cannot give more, because it is at 100%. If thats the case, you should either lower fps or give more work to the GPU, so it cannot handle so many frames. I went the first way and found that my CPU can handle 94fps, leaving room for system it self (background processes, networking, etc). Maybe it could do a bit more, but don't think I would gain much more with this cpu.
-If you cannot get stable 60fps, most probably kills are gone be hard to get. Sneaking around is still an option, though. :D
-To figure out what CPU I would need I used this site. But it looks like its not working at the moment.
+If you cannot get stable 60fps, most probably kills are gonna be hard to get. Sneaking around is still an option, though. :D
+To figure out what CPU I would need I used this [site](https://pc-builds.com/calculator/). ~~But it looks like its not working at the moment.~~
 
 **NVidia Settings**
 
