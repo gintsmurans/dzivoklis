@@ -26,4 +26,4 @@ Ar griestiem dzīvojamai istabai un ventilācijas šahtām:
 * Tikt vaļā no gāzes skaitītāja
 * Pabīdīt vienas no guļamistabas durvīm uz loga pusi, lai būtu vienādi ar otrām un stūrī varētu ielikt plauktu vai skapi.
 
-*Precīzāks un +/- atjaunots plāns būs apskatāms [Dzīvokļa remonts lapā]({filename}pages/lv/sturakmeni.md).*
+*Precīzāks un +/- atjaunots plāns būs apskatāms [Dzīvokļa remonts lapā]({filename}/pages/lv/dzivokla-remonts.md).*

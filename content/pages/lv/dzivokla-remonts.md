@@ -8,13 +8,13 @@ Lang: lv
 
 #### Visādi
 * √ Tikt vaļā no gāzes skaitītāja
-* √ Nojaukt dzīvojamās istabas sienu, apvienojot virtuvi ar dzīvojamo istabu. 
+* √ Nojaukt dzīvojamās istabas sienu, apvienojot virtuvi ar dzīvojamo istabu.
     * √ Iznest būvgružus
 * X Otrā koridorī plaukts ar iebūvētu galdu
 
 
 #### .. Apkure
-* √ [Izvēlēties radiatorus]({filename}/posts/radiatori-1-dala.md)
+* √ [Izvēlēties radiatorus]({filename}/posts/lv/radiatori-1-dala.md)
 * √ Nopirkt & Atvest
 * √ Meistars saka, ka varēs trubas izlocīt zem grīdas
 * √ Saskaņot montāžu ar meistaru un namsaimnieku
@@ -154,7 +154,7 @@ Lang: lv
 
 ---
     √ - Izdarīts;
-    .. - Procesā; 
-    / - Daļēji vai visi materiāli ir iegādāti; 
-    _slīpraksts_ - jautājumi; 
+    .. - Procesā;
+    / - Daļēji vai visi materiāli ir iegādāti;
+    _slīpraksts_ - jautājumi;
     X - netiks darīts pagaidām vai vispār
