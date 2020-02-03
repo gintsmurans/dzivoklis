@@ -4,7 +4,9 @@ Category: Games
 Tags: Games, Pubg
 Lang: en
 
-I have been "whining" on reddit about pubg issues for a while now, and I think I finally figured it out.
+Update (2020-02-03): Brought some things up to date.
+
+I have been "whining" on reddit about pubg issues for a while now, ~~and I think I finally figured it out.~~ - to be honest pubg is a weird game. I have been playing lot of COD:MW lately and some CS:GO too, and sometimes I win, sometimes I lose there, as it should be cosidering that I am quite average gamer here. But PUBG is an annoying nightmare, nothing works for me, I lose 95% of time even if its not an RNG case. Anyway the following is still relevant.
 
 > _Take a look at my [other post]({filename}ultimate-guide-to-pubg-stuttering-issues.md) on how to get a better performance in Pubg._
 
