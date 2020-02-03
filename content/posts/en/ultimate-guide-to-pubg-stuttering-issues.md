@@ -4,19 +4,21 @@ Category: Games
 Tags: Games, Pubg
 Lang: en
 
+Update (2020-02-03): Brought some things up to date.
 Update (2019-05-03): Few typo and speeling fixes.
 
 So I have been fighting with fps drops and stuttering issues for quite a while now, and I have a decent system. Here is what I have found. This guide is for nvidia with a better GPU than CPU (apparently that stuff matters), and most probably won't work for everyone, but you can find ideas to increase performance.
 
 1. Avoid hdd, go for ssd or even better M.2 NMVE drive. Last one loads games, and system it self, million times faster.
 2. Go for performance middle ground. For example, download OpenHardwareMonitor, check that CPU and GPU utilisation is somewhat consistent. Later on that.
-3. Make sure you have a decent mouse and keyboard, especially mouse. Upgrading generic mouse to SteelSeries Rival was like a day versus night for me.
-4. If it is an option for you, go for a 144Hz monitor. Even if your computer can handle only 90fps, its still a lot better than 60Hz.
-5. Turn off the G-Sync and V-Sync, it does make the game to look quite a bit smoother, but if you want maximum performance, I suggest turning it off.
+3. Make sure you have a decent mouse and keyboard, especially mouse. ~~Upgrading generic mouse to SteelSeries Rival was like a day versus night for me.~~ Switched to Logitech G305 and don't want to ever look back.
+4. If it is an option for you, go for a 144Hz monitor. Even if your computer can handle only 90fps, its still a lot better than 60Hz. Also if your PC can handle it, just go to [240fps](https://www.youtube.com/watch?v=OX31kZbAXsA).
+5. Turn off the G-Sync and V-Sync, it does make the game to look quite a bit smoother, but if you want maximum performance, I suggest turning it off. Also Fast sync may improve the looks but performance is somewhat limited. Yes I know its just 1 frame difference, but we are aiming for performance here. 
 6. Always use Fullscreen mode, without windows. It drains CPU a LOT.
 7. Setup page file. Here is one example how to do it: [Page File Setup](https://www.geeksinphoenix.com/blog/post/2016/05/10/how-to-manage-windows-10-virtual-memory.aspx). Set same Initial size and Maximum size. If you have 4GB - don't play this game. If you have 8GB, set it to 4069 - no point setting it any larger.
 8. Make sure your power settings are set to Maximum performance.
-9. Usually you would think the bigger is better, but, as it turns out, thats not the case with mouse and keyboard polling rates. Decreasing polling rate from 1000hz to 500hz (I did it on both - mouse and keyboard) seems to be the single most effective way that reduced lagging feeling for me. I think what is happening here is that when a mouse is constantly sending movement updates at 1kHz, my cpu (or game?) couldn't handle it, thats why when I was clicking mouse buttons, they always felt like a bit delayed. At first I thought it is monitor being at 60Hz. After getting 144Hz monitor, I thought it is cpu, that cannot handle video processing. After smoothing fps out, I thought its nvidia settings. After tweaking those, I thought it is a buggy ssd, after upgrading ssd to m.2 it actually seemed better. Who knows. Then somebody on reddit suggested to look into mouse polling rate, and turns out that was the issue. Before this change I had set fps limit to 94, but in-game it was around 88-90. After changing polling rate it is now quite steady at 94.
+9. Also make sure you set texture filtering in nvidia control panel to performance, it will look worse, but as it turns out this greatly impacts fps drops and stuttering when tested 1% and 0.1% fps low.   
+10. Usually you would think the bigger is better, but, as it turns out, thats not the case with mouse and keyboard polling rates. Decreasing polling rate from 1000hz to 500hz (I did it on both - mouse and keyboard) seems to be the single most effective way that reduced lagging feeling for me. I think what is happening here is that when a mouse is constantly sending movement updates at 1kHz, my cpu (or game?) couldn't handle it, thats why when I was clicking mouse buttons, they always felt like a bit delayed. At first I thought it is monitor being at 60Hz. After getting 144Hz monitor, I thought it is cpu, that cannot handle video processing. After smoothing fps out, I thought its nvidia settings. After tweaking those, I thought it is a buggy ssd, after upgrading ssd to m.2 it actually seemed better. Who knows. Then somebody on reddit suggested to look into mouse polling rate, and turns out that was the issue. Before this change I had set fps limit to 94, but in-game it was around 88-90. After changing polling rate it is now quite steady at 94. **This only applies if you have weaker or older CPU** - I have since then bought a new cpu and it is working same on both 500hz and 1000hz.
 
 **GPU vs CPU**
 
