@@ -28,14 +28,14 @@ Update (2019-05-03): Few typo and speeling fixes.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Avoid hdd, go for ssd or even better M.2 NMVE drive. Last one loads games, and system it self, million times faster.&lt;/li&gt;
 &lt;li&gt;Go for performance middle ground. For example, download OpenHardwareMonitor, check that CPU and GPU utilisation is somewhat consistent. Later on that.&lt;/li&gt;
-&lt;li&gt;Make sure you have a decent mouse and keyboard, especially mouse. ~~Upgrading generic mouse to SteelSeries Rival was like a day versus night for me.~~ Switched to Logitech G305 and don't want to ever look back.&lt;/li&gt;
+&lt;li&gt;Make sure you have a decent mouse and keyboard, especially mouse. &lt;s&gt;Upgrading generic mouse to SteelSeries Rival was like a day versus night for me.&lt;/s&gt; Switched to Logitech G305 and don't want to ever look back.&lt;/li&gt;
 &lt;li&gt;If it is an option for you, go for a 144Hz monitor. Even if your computer can handle only 90fps, its still a lot better than 60Hz …&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;p&gt;Update (2020-02-03): Brought some things up to date.
 Update (2019-05-03): Few typo and speeling fixes.&lt;/p&gt;
 &lt;p&gt;So I have been fighting with fps drops and stuttering issues for quite a while now, and I have a decent system. Here is what I have found. This guide is for nvidia with a better GPU than CPU (apparently that stuff matters), and most probably won't work for everyone, but you can find ideas to increase performance.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Avoid hdd, go for ssd or even better M.2 NMVE drive. Last one loads games, and system it self, million times faster.&lt;/li&gt;
 &lt;li&gt;Go for performance middle ground. For example, download OpenHardwareMonitor, check that CPU and GPU utilisation is somewhat consistent. Later on that.&lt;/li&gt;
-&lt;li&gt;Make sure you have a decent mouse and keyboard, especially mouse. ~~Upgrading generic mouse to SteelSeries Rival was like a day versus night for me.~~ Switched to Logitech G305 and don't want to ever look back.&lt;/li&gt;
+&lt;li&gt;Make sure you have a decent mouse and keyboard, especially mouse. &lt;s&gt;Upgrading generic mouse to SteelSeries Rival was like a day versus night for me.&lt;/s&gt; Switched to Logitech G305 and don't want to ever look back.&lt;/li&gt;
 &lt;li&gt;If it is an option for you, go for a 144Hz monitor. Even if your computer can handle only 90fps, its still a lot better than 60Hz. Also if your PC can handle it, just go to &lt;a href="https://www.youtube.com/watch?v=OX31kZbAXsA"&gt;240fps&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Turn off the G-Sync and V-Sync, it does make the game to look quite a bit smoother, but if you want maximum performance, I suggest turning it off. Also Fast sync may improve the looks but performance is somewhat limited. Yes I know its just 1 frame difference, but we are aiming for performance here.&lt;/li&gt;
 &lt;li&gt;Always use Fullscreen mode, without windows. It drains CPU a LOT.&lt;/li&gt;
