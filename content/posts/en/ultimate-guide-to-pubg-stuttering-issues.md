@@ -13,11 +13,11 @@ So I have been fighting with fps drops and stuttering issues for quite a while n
 2. Go for performance middle ground. For example, download OpenHardwareMonitor, check that CPU and GPU utilisation is somewhat consistent. Later on that.
 3. Make sure you have a decent mouse and keyboard, especially mouse. ~~Upgrading generic mouse to SteelSeries Rival was like a day versus night for me.~~ Switched to Logitech G305 and don't want to ever look back.
 4. If it is an option for you, go for a 144Hz monitor. Even if your computer can handle only 90fps, its still a lot better than 60Hz. Also if your PC can handle it, just go to [240fps](https://www.youtube.com/watch?v=OX31kZbAXsA).
-5. Turn off the G-Sync and V-Sync, it does make the game to look quite a bit smoother, but if you want maximum performance, I suggest turning it off. Also Fast sync may improve the looks but performance is somewhat limited. Yes I know its just 1 frame difference, but we are aiming for performance here. 
+5. Turn off the G-Sync and V-Sync, it does make the game to look quite a bit smoother, but if you want maximum performance, I suggest turning it off. Also Fast sync may improve the looks but performance is somewhat limited. Yes I know its just 1 frame difference, but we are aiming for performance here.
 6. Always use Fullscreen mode, without windows. It drains CPU a LOT.
 7. Setup page file. Here is one example how to do it: [Page File Setup](https://www.geeksinphoenix.com/blog/post/2016/05/10/how-to-manage-windows-10-virtual-memory.aspx). Set same Initial size and Maximum size. If you have 4GB - don't play this game. If you have 8GB, set it to 4069 - no point setting it any larger.
 8. Make sure your power settings are set to Maximum performance.
-9. Also make sure you set texture filtering in nvidia control panel to performance, it will look worse, but as it turns out this greatly impacts fps drops and stuttering when tested 1% and 0.1% fps low.   
+9. Also make sure you set texture filtering in nvidia control panel to performance, it will look worse, but as it turns out this greatly impacts fps drops and stuttering when tested 1% and 0.1% fps low.
 10. Usually you would think the bigger is better, but, as it turns out, thats not the case with mouse and keyboard polling rates. Decreasing polling rate from 1000hz to 500hz (I did it on both - mouse and keyboard) seems to be the single most effective way that reduced lagging feeling for me. I think what is happening here is that when a mouse is constantly sending movement updates at 1kHz, my cpu (or game?) couldn't handle it, thats why when I was clicking mouse buttons, they always felt like a bit delayed. At first I thought it is monitor being at 60Hz. After getting 144Hz monitor, I thought it is cpu, that cannot handle video processing. After smoothing fps out, I thought its nvidia settings. After tweaking those, I thought it is a buggy ssd, after upgrading ssd to m.2 it actually seemed better. Who knows. Then somebody on reddit suggested to look into mouse polling rate, and turns out that was the issue. Before this change I had set fps limit to 94, but in-game it was around 88-90. After changing polling rate it is now quite steady at 94. **This only applies if you have weaker or older CPU** - I have since then bought a new cpu and it is working same on both 500hz and 1000hz.
 
 **GPU vs CPU**
@@ -31,27 +31,27 @@ To figure out what CPU I would need I used this [site](https://pc-builds.com/cal
 Click second mouse button on Desktop -> NVIDIA Control Panel -> Manage 3d Settings.
 Global settings:
 
-![GlobalSettings]({filename}/images/pubg/nvidia-global-settings.png)
+![GlobalSettings]({static}/images/pubg/nvidia-global-settings.png)
 
 **Pubg specific settings**
 
-![PubgSettings]({filename}/images/pubg/nvidia-pubg-settings.png)
+![PubgSettings]({static}/images/pubg/nvidia-pubg-settings.png)
 
 * One thing to mention, I am setting preferred refresh rate & maximum pre-rendered frames (suggested is to set it to 1) to application controlled, so it self figures out what it needs.
 
 **G-Sync off**
 
-![GSync]({filename}/images/pubg/nvidia-gsync.png)
+![GSync]({static}/images/pubg/nvidia-gsync.png)
 
 **Refresh Rate**
 If your screen feels like 60hz, but you have a monitor that can do more, make sure its correctly set in nvidia settings:
 
-![RefreshRate]({filename}/images/pubg/nvidia-refresh-rate.png)
+![RefreshRate]({static}/images/pubg/nvidia-refresh-rate.png)
 
 
 **In-Game settings**
 
-![InGame]({filename}/images/pubg/in-game-settings.png)
+![InGame]({static}/images/pubg/in-game-settings.png)
 
 - AA - High caused a bit more fps drops, so I went with Medium. I wouldn't set it to Low, because it starts to look bad below Medium
 - PP - Same as AA
@@ -64,6 +64,6 @@ If your screen feels like 60hz, but you have a monitor that can do more, make su
 
 **Open Hardware Monitor**
 
-![OHWM]({filename}/images/pubg/open-hw-monitor.png)
+![OHWM]({static}/images/pubg/open-hw-monitor.png)
 
 * Update settings until you get somewhat consistent GPU and CPU utilisation

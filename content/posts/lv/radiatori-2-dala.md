@@ -8,6 +8,6 @@ Apkure jau kādu laiku savesta kārtībā, raksts tikai tagad. Švaki man ar rak
 
 [Iepriekš rakstīju]({filename}/posts/lv/radiatori-1-dala.md), ka izvēlējos čuguna radiatorus, kurus jau nopirkām un uznesām augšā, taču pēc pārrunām ar santehniķi, bet galvenokārt dēļ tā, ka paši vairs Valmierā nedzīvojam, nolēmu tomēr izvēlēties vienkāršāko variantu - klasiskās baltās kastes.
 
-![Radiatori]({filename}/images/radiatori-3.jpg)
+![Radiatori]({static}/images/radiatori-3.jpg)
 
 Ja citas lietas bija diezgan viegli izlemt, piemēram, par elektrības vadu vilkšanu zvaigznes veidā, tad apkure bija viens no grūtākajiem jautājumiem. Pat dzīvoklim ir vairāki veidi un komentāri vienmēr ir labi un slikti, gan vienam, gan otram veidam. Varu iedomāties cik sarežģīti būtu izvēlēties apkures veidu privātmājai.

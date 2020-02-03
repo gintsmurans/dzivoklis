@@ -9,10 +9,10 @@ Dzīvoklim ir 4 istabas, 3 izolētas, viena caurstaigājama. Visai neērtā veid
 Kamēr gaidījām dzīvokļa pārdevēju, biju jau sācis meklēt arhitektu. Ja kāds saskaras ar grūtībām atrast arhitektu, tad iesaku uzrakstīt uz attiecīgās pašvaldības būvvaldi. Valmieras būvvalde atbildēja nākošajā dienā ar viņiem zināmo arhitektu sarakstu. Sazinājos ar vairākiem līdz (mazliet piepalīdzot atsauksmēm) nonācām līdz Allai Mellēnai (Iesaku - 26557715), kura atbrauca uz dzīvokli, uzklausīja, ieteica dažādus variantus, uztaisīja pārbūves projektu, saskaņoja ar būvinženieri par sienas nojaukšanu, aizveda pati projektu uz būvvaldi un pēc pāris dienām iedeva jau gatavus, parakstītus papīrus, ar pārbūves projektu, un visu pārējo. Es jau biju sagatavojies birokrātijas paraugstundai, bet viss izrādījās daudz, daudz vienkāršāk. Piebilde - Valmieras būvvalde neprasa maksāt par pārbūves plānu apstiprināšanu (vismaz vienkāršoto), tādējādi nākot pretī Valmieras iedzīvotājiem. Forši!
 
 Pēc pārbūves projekta apstiprināšanas sāku pamazām macīties sketchup'u:
-![SketchUp]({filename}/images/3d-1.png)
+![SketchUp]({static}/images/3d-1.png)
 
 Ar griestiem dzīvojamai istabai un ventilācijas šahtām:
-![SketchUp]({filename}/images/3d-2.png)
+![SketchUp]({static}/images/3d-2.png)
 
 Īsumā plāns ir šāds:
 

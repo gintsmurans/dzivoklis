@@ -12,10 +12,10 @@ Jaunus nopirkt nav reāli, tie grozās cenās ap 45 eur par ribu, bet man vajag 
 
 Tā kā jau biju pirms tam pie viņiem bijis, tad uzzvanu, pasūtu, apmaksājam pusi avansa rēķina un pēc nedēļas, vai pusotras braucam pakaļ:
 
-![Radiatori]({filename}/images/radiatori-1.jpg)
+![Radiatori]({static}/images/radiatori-1.jpg)
 
 Tika nolemts atstāt dabisko čuguna krāsu tikai aizsardzībai nolakojot.
-![Radiatori]({filename}/images/radiatori-2.jpg)
+![Radiatori]({static}/images/radiatori-2.jpg)
 
 
 Tālāk seko tikai atrast santehniķi, kas mums vecos nomainīs uz jaunajiem. Tā kā bijām jau sākuši interesēties pirms tam, tad esam tikuši līdz namsaimnieka santehniķim, kurš zinās kur jāslēdz nost ūdens, utt. Bet kamēr es netiku darba dēļ un santehniķis netika sava darba dēļ, pienāca ziema un šobrīd palika tā, ka radiatorus namsaimnieks neļauj mainīt kamēr ārā ir mīnusi. 4R džeks stāstīja, ka baigi ilgi tie radiatori nedrīkst stāvēt nepielikti, jo savādāk izkaltīs savienojumos esošās pakulas, kuras es iedomājos ka ir sasmērētas ar kaut kādu smēri. Pagaidām nekas cits neatliek kā gaidīt uz plusiem, un cerēt ka nebūs jāved atpakaļ visu pārskrūvēt...
