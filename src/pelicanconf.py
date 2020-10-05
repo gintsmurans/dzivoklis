@@ -3,6 +3,7 @@
 from __future__ import unicode_literals
 
 PATH = 'content'
+OUTPUT_PATH = '../output'
 
 AUTHOR = 'Gints Murāns'
 SITENAME = 'GM'

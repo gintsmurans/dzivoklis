@@ -9,7 +9,7 @@ RUN apt-get update -yq \
     && apt-get install -yq apt-utils
 
 RUN apt-get install -yq apt-transport-https lsb-release ca-certificates \
-        wget curl unzip git supervisor sudo build-essential locales
+        wget curl unzip git supervisor locales
 
 # Update locales
 RUN echo "Europe/Riga" > /etc/timezone && \
@@ -24,23 +24,15 @@ RUN echo "Europe/Riga" > /etc/timezone && \
 RUN apt-get -yq install python3 python3-pip
 
 # Install services python dependecies
-COPY ./requirements.txt  /root/requirements.txt
+COPY ./data/requirements.txt  /root/requirements.txt
 RUN pip3 install -r /root/requirements.txt && rm /root/requirements.txt
 
 # Supervisord configuration
-ADD ./supervisord.web.conf  /etc/supervisor/conf.d/web.conf
-ADD ./supervisord.services.conf  /etc/supervisor/conf.d/services.conf
-ADD ./post-install.bash  /root/post-install.bash
-
-# Fix www-data home directory
-RUN mkdir -p /var/www/ \
-    && chown www-data:www-data /var/www/ \
-    && mkdir -p /srv/sites/web/ \
-    && chown www-data:www-data /srv/sites/web/
+COPY ./conf/supervisord.dev.conf  /etc/supervisor/conf.d/dev.conf
+COPY ./post-install.bash  /root/post-install.bash
 
 # Set work directory and start php webserver
-WORKDIR /srv/sites/web/
+WORKDIR /srv/project/src/
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf", "-n"]
 
-EXPOSE 9100
-EXPOSE 4100
+EXPOSE 8000
