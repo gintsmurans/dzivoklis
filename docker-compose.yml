@@ -1,0 +1,10 @@
+version: '3.0'
+services:
+  develop:
+    build: ./docker/develop
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./src:/srv/src:cached
+    networks:
+      - default
