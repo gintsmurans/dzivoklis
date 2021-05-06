@@ -25,6 +25,3 @@ DELETE_OUTPUT_DIRECTORY = True
 # Following items are often useful when publishing
 
 DISQUS_SITENAME = 'dzivoklis'
-
-PIWIK_SITE_ID = 2
-PIWIK_URL = 'matomo.4apps.lv'

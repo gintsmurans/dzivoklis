@@ -9,7 +9,7 @@ RUN apt-get update -yq \
     && apt-get install -yq apt-utils
 
 RUN apt-get install -yq apt-transport-https lsb-release ca-certificates \
-        wget curl unzip git supervisor locales
+        git supervisor locales
 
 # Update locales
 RUN echo "Europe/Riga" > /etc/timezone && \
