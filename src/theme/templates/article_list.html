@@ -4,6 +4,10 @@
         {% for article in (articles_page.object_list if articles_page else articles) %}
             <article>
                 <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
+                <span class="published">
+                    <i class="fa fa-calendar"></i>
+                    <time datetime="{{ article.date.isoformat() }}"> {{ article.date.date() }}</time>
+                </span>
                 {% if DISPLAY_ARTICLE_INFO_ON_INDEX %}
                     <div class="well well-sm">
                         {% include "includes/article_info.html" %}

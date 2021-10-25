@@ -19,7 +19,9 @@ I18N_SUBSITES = {
         'AUTHOR': 'Gints Murāns',
         'LOCALE': 'en_US.UTF-8',
         'STATIC_PATHS': ['images', 'extra/favicon.png'],
-        'LINKS': (),
+        'LINKS': (
+            ('4Apps', 'https://4apps.lv/products'),
+        ),
     }
 }
 

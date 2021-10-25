@@ -8,7 +8,7 @@ Lang: en
 
 I have been "whining" on reddit about pubg issues for a while now, <s>and I think I finally figured it out.</s> - to be honest pubg is a weird game. I have been playing lot of COD:MW lately and some CS:GO too, and sometimes I win, sometimes I lose there, as it should be cosidering that I am quite average gamer here. But PUBG is an annoying nightmare, nothing works for me, I lose 95% of time even if its not an RNG case. In some cases when opponent is distracted and I win a fight it happens with a weird stutter. In one frame I am firing, in second they are on the ground with missing fall animation. As I said PUBG is acting weird. Anyway the following is still relevant.
 
-> _Take a look at my [other post]({filename}ultimate-guide-to-pubg-stuttering-issues.md) on how to get a better performance in Pubg._
+> _Take a look at my [other post]({filename}/posts/en/2018/ultimate-guide-to-pubg-stuttering-issues.md) on how to get a better performance in Pubg._
 
 **Lets start from the beginning?**
 
