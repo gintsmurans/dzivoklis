@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>GM - Games</title><link href="http://gm.lv/en/" rel="alternate"></link><link href="http://gm.lv/feeds/category_games.atom.xml" rel="self"></link><id>http://gm.lv/en/</id><updated>2019-05-03T16:02:00+03:00</updated><entry><title>Another PUBG issue</title><link href="http://gm.lv/en/another-pubg-issue.html" rel="alternate"></link><published>2019-05-03T16:02:00+03:00</published><updated>2019-05-03T16:02:00+03:00</updated><author><name>Gints Murāns</name></author><id>tag:gm.lv,2019-05-03:/en/another-pubg-issue.html</id><summary type="html">&lt;ul&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>GM - Games</title><link href="https://gm.lv/en/" rel="alternate"></link><link href="https://gm.lv/feeds/category_games.atom.xml" rel="self"></link><id>https://gm.lv/en/</id><updated>2019-05-03T16:02:00+03:00</updated><entry><title>Another PUBG issue</title><link href="https://gm.lv/en/another-pubg-issue.html" rel="alternate"></link><published>2019-05-03T16:02:00+03:00</published><updated>2019-05-03T16:02:00+03:00</updated><author><name>Gints Murāns</name></author><id>tag:gm.lv,2019-05-03:/en/another-pubg-issue.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;Update (2020-02-03): Brought some things up to date.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I have been "whining" on reddit about pubg issues for a while now, &lt;s&gt;and I think I finally figured it out.&lt;/s&gt; - to be honest pubg is a weird game. I have been playing lot of COD:MW lately and some CS:GO too, and sometimes I win, sometimes I lose there, as it should be cosidering that I am quite average gamer here. But PUBG is an annoying nightmare, nothing works for me, I lose 95% of time even if its not an RNG case. In some cases when opponent is distracted and I win a fight it happens with a weird stutter. In one frame I am firing, in second they are on the ground with missing fall animation. As I said PUBG is acting weird. Anyway the following is still relevant.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;Take a look at my &lt;a href="http://gm.lv/en/ultimate-guide-to-solve-pubg-stuttering-issues.html"&gt;other post&lt;/a&gt; on how to get a better performance in Pubg.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Take a look at my &lt;a href="https://gm.lv/en/ultimate-guide-to-solve-pubg-stuttering-issues.html"&gt;other post&lt;/a&gt; on how to get a better performance in Pubg.&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Lets start from the beginning?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;I put together a computer just for gaming around a year ago. At the time x299 chipset just …&lt;/p&gt;</summary><content type="html">&lt;ul&gt;
@@ -12,7 +12,7 @@
 &lt;/ul&gt;
 &lt;p&gt;I have been "whining" on reddit about pubg issues for a while now, &lt;s&gt;and I think I finally figured it out.&lt;/s&gt; - to be honest pubg is a weird game. I have been playing lot of COD:MW lately and some CS:GO too, and sometimes I win, sometimes I lose there, as it should be cosidering that I am quite average gamer here. But PUBG is an annoying nightmare, nothing works for me, I lose 95% of time even if its not an RNG case. In some cases when opponent is distracted and I win a fight it happens with a weird stutter. In one frame I am firing, in second they are on the ground with missing fall animation. As I said PUBG is acting weird. Anyway the following is still relevant.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;Take a look at my &lt;a href="http://gm.lv/en/ultimate-guide-to-solve-pubg-stuttering-issues.html"&gt;other post&lt;/a&gt; on how to get a better performance in Pubg.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Take a look at my &lt;a href="https://gm.lv/en/ultimate-guide-to-solve-pubg-stuttering-issues.html"&gt;other post&lt;/a&gt; on how to get a better performance in Pubg.&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Lets start from the beginning?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;I put together a computer just for gaming around a year ago. At the time x299 chipset just came out and I thought - the newer, the better, so I bought Aorus Gaming 3, X299 + i5-7640x + HyperX FURY DDR4-2133 with some generic (shitty) PSU, RX550 GPU, generic mouse and keyboard, SSD, and upgraded stock cooler to a better one from Cooler Master.&lt;/p&gt;
@@ -29,7 +29,7 @@
 &lt;p&gt;Thats it.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;TL;DR: Too fast internet was causing delays while playing online fps games.&lt;/p&gt;
-&lt;/blockquote&gt;</content><category term="Games"></category><category term="Games"></category><category term="Pubg"></category></entry><entry><title>Ultimate guide to solve PUBG stuttering issues</title><link href="http://gm.lv/en/ultimate-guide-to-solve-pubg-stuttering-issues.html" rel="alternate"></link><published>2018-11-20T17:46:00+02:00</published><updated>2018-11-20T17:46:00+02:00</updated><author><name>Gints Murāns</name></author><id>tag:gm.lv,2018-11-20:/en/ultimate-guide-to-solve-pubg-stuttering-issues.html</id><summary type="html">&lt;ul&gt;
+&lt;/blockquote&gt;</content><category term="Games"></category><category term="Games"></category><category term="Pubg"></category></entry><entry><title>Ultimate guide to solve PUBG stuttering issues</title><link href="https://gm.lv/en/ultimate-guide-to-solve-pubg-stuttering-issues.html" rel="alternate"></link><published>2018-11-20T17:46:00+02:00</published><updated>2018-11-20T17:46:00+02:00</updated><author><name>Gints Murāns</name></author><id>tag:gm.lv,2018-11-20:/en/ultimate-guide-to-solve-pubg-stuttering-issues.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;Update (2020-02-03): Brought some things up to date.&lt;/li&gt;
 &lt;li&gt;Update (2019-05-03): Few typo and speeling fixes.&lt;/li&gt;
 &lt;/ul&gt;
@@ -62,19 +62,19 @@ To figure out what CPU I would need I used this &lt;a href="https://pc-builds.co
 &lt;p&gt;&lt;strong&gt;NVidia Settings&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Click second mouse button on Desktop -&amp;gt; NVIDIA Control Panel -&amp;gt; Manage 3d Settings.
 Global settings:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="GlobalSettings" src="http://gm.lv/en/images/pubg/nvidia-global-settings.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="GlobalSettings" src="https://gm.lv/en/images/pubg/nvidia-global-settings.png"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Pubg specific settings&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="PubgSettings" src="http://gm.lv/en/images/pubg/nvidia-pubg-settings.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="PubgSettings" src="https://gm.lv/en/images/pubg/nvidia-pubg-settings.png"&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;One thing to mention, I am setting preferred refresh rate &amp;amp; maximum pre-rendered frames (suggested is to set it to 1) to application controlled, so it self figures out what it needs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;G-Sync off&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="GSync" src="http://gm.lv/en/images/pubg/nvidia-gsync.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="GSync" src="https://gm.lv/en/images/pubg/nvidia-gsync.png"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Refresh Rate&lt;/strong&gt;
 If your screen feels like 60hz, but you have a monitor that can do more, make sure its correctly set in nvidia settings:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="RefreshRate" src="http://gm.lv/en/images/pubg/nvidia-refresh-rate.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="RefreshRate" src="https://gm.lv/en/images/pubg/nvidia-refresh-rate.png"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;In-Game settings&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="InGame" src="http://gm.lv/en/images/pubg/in-game-settings.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="InGame" src="https://gm.lv/en/images/pubg/in-game-settings.png"&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;AA - High caused a bit more fps drops, so I went with Medium. I wouldn't set it to Low, because it starts to look bad below Medium&lt;/li&gt;
 &lt;li&gt;PP - Same as AA&lt;/li&gt;
@@ -86,7 +86,7 @@ If your screen feels like 60hz, but you have a monitor that can do more, make su
 &lt;li&gt;You don't need rest of the settings.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Open Hardware Monitor&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="OHWM" src="http://gm.lv/en/images/pubg/open-hw-monitor.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="OHWM" src="https://gm.lv/en/images/pubg/open-hw-monitor.png"&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Update settings until you get somewhat consistent GPU and CPU utilisation&lt;/li&gt;
 &lt;/ul&gt;</content><category term="Games"></category><category term="Games"></category><category term="Pubg"></category></entry></feed>
