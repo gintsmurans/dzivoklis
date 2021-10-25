@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Sākums - GM</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="http://gm.lv/en/favicon.png" rel="icon">
+
+
+    <meta name="author" content="Gints Murāns" />
+    <meta name="keywords" content="Sākums" />
+
+    <!-- Open Graph tags -->
+        <meta property="og:site_name" content="GM" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="GM"/>
+        <meta property="og:url" content="http://gm.lv/en"/>
+        <meta property="og:description" content="GM"/>
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="http://gm.lv/en/../theme/css/bootstrap.united.min.css" type="text/css"/>
+    <link href="http://gm.lv/en/../theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="http://gm.lv/en/../theme/css/pygments/solarizeddark.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://gm.lv/en/../theme/css/style.css" type="text/css"/>
+
+        <link href="http://gm.lv/en/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="GM ATOM Feed"/>
+
+        <link href="http://gm.lv/en/feeds/all.rss.xml" type="application/rss+xml" rel="alternate"
+              title="GM RSS Feed"/>
+
+
+        <link href="http://gm.lv/en/feeds/category_sakums.atom.xml" type="application/atom+xml" rel="alternate"
+              title="GM Sākums ATOM Feed"/>
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <a href="http://gm.lv/en/" class="navbar-brand">
+GM            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                         <li><a href="http://gm.lv/en/pages/about.html">
+                             About
+                          </a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://gm.lv/">lv</a></li>
+                <li class="active"><a href="http://gm.lv/en/">en</a></li>
+
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+            <article>
+                <h2><a href="http://gm.lv/en/iphone-navigation-back-button.html">iPhone navigation back button</a></h2>
+                <span class="published">
+                    <i class="fa fa-calendar"></i>
+                    <time datetime="2011-03-25T06:59:00+02:00"> 2011-03-25</time>
+                </span>
+                <div class="summary"><p>It turns out, that navigation bar back button is set from parent controller that pushed new view controller. So if you want to hide back button you have to hide it in first view controller and then push the new one.</p>
+<p>But if you have many places where you need to push new view controllers and have back button, but only one place where it needs to be set it is not very efficient to set it every time to not hidden. The solution is this code called from view controller pushed:</p>
+<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="nb">self</span><span class="p">.</span><span class="n">navigationController</span><span class="p">.</span><span class="n">parentViewController</span><span class="p">.</span><span class="n">navigationItem</span> <span class="nl">setHidesBackButton</span><span class="p">:</span><span class="nb">YES</span><span class="p">];</span>
+</code></pre></div>
+
+<p>Don't forget to show it when view disapears.</p>
+<p>It also applies to custom back buttons - you have to apply it to first view controller, not the one is being pushed on.</p>
+                    <a class="btn btn-default btn-xs" href="http://gm.lv/en/iphone-navigation-back-button.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="http://gm.lv/en/comparing-posterous-and-google-analytics-statistics.html">Comparing posterous and google analytics statistics</a></h2>
+                <span class="published">
+                    <i class="fa fa-calendar"></i>
+                    <time datetime="2011-03-22T18:13:00+02:00"> 2011-03-22</time>
+                </span>
+                <div class="summary"><p>Of course I would like to have my site viewed as much as posterous says, but I think I can be sure, that google analytics is more correct. Anyway difference ir very large so I assume, that posterous don't filter any kind of requests. I mean search engines, and so on.</p>
+<p><img alt="Screen_shot_2011-03-23_at_3" src="http://getfile5.posterous.com/getfile/files.posterous.com/gmlv/WVsBFClVHGAXpFiABfNc93ehy9hn7Mq8iybyqZg6wJHr2ubGSryV31xfNqNk/Screen_shot_2011-03-23_at_3.08.png.scaled696.png">
+<img alt="Screen_shot_2011-03-23_at_3" src="http://getfile1.posterous.com/getfile/files.posterous.com/gmlv/rzVJ98ieKGsTaLsoevEwa5m04bPhbUnnPEIneJGBKhwBUGhb9ERWGlyxmmwx/Screen_shot_2011-03-23_at_3.07.png.scaled696.png">
+[See the full gallery on Posterous]<a href="http://gm.lv/comparing-posterous-and-google-analytics-stat">5</a></p>
+                    <a class="btn btn-default btn-xs" href="http://gm.lv/en/comparing-posterous-and-google-analytics-statistics.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="http://gm.lv/en/why-i-dont-want-to-buy-new-macbook-pro.html">Why I don't want to buy new macbook pro?</a></h2>
+                <span class="published">
+                    <i class="fa fa-calendar"></i>
+                    <time datetime="2011-03-22T16:01:00+02:00"> 2011-03-22</time>
+                </span>
+                <div class="summary"><p>I do want to have it, because I have 3 years old macbook white, but there are things keeping me away from buying it. Basically these things that came with new macbook pro are not so important to replace the old one.</p>
+<p>Lets start with features new macbook pro has, but they can't buy me.</p>
+<p><strong>Thunderbolt.</strong> The speed seems amazing (10 Gbps), but most probably the first time I will use it will be after some 5 years, as I am not compressing and storing any big video files, images, etc.</p>
+<p><strong>Faster, better video card.</strong> Cool to have it, right? But in real world I don't see any downside of the one I currently have. Really I haven't seen any problems that could apply to video card. I am not playing games very much..</p>
+<p><strong>Next-generation quad-core and dual-core Intel processors.</strong> This is also pretty cool, and actually sometimes I feel like my old macbook could be little faster, especially when I started learning iPhone development. But it is not like the current 2.4 GHz CPU is lagging.</p>
+<p><strong>Battery.</strong> My …</p>
+                    <a class="btn btn-default btn-xs" href="http://gm.lv/en/why-i-dont-want-to-buy-new-macbook-pro.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="http://gm.lv/en/sleepy-louise.html">Sleepy Louise</a></h2>
+                <span class="published">
+                    <i class="fa fa-calendar"></i>
+                    <time datetime="2011-01-22T12:13:00+02:00"> 2011-01-22</time>
+                </span>
+                <div class="summary"><p>Here is another video with little Louise.</p>
+                    <a class="btn btn-default btn-xs" href="http://gm.lv/en/sleepy-louise.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="http://gm.lv/en/code-cards-v12.html">Code Cards v1.2</a></h2>
+                <span class="published">
+                    <i class="fa fa-calendar"></i>
+                    <time datetime="2011-01-11T23:13:00+02:00"> 2011-01-11</time>
+                </span>
+                <div class="summary"><p>I just wanted to mention, that since yestereday <a href="http://codecards.gm.lv/">Code Cards 1.2</a>  have been approved and is available on <a href="http://itunes.apple.com/us/app/code-cards/id412350680?mt=8&amp;ls=1">App Store</a>.</p>
+<p>This update took 3 days to process. Nice work Apple. :)</p>
+<p>P.s. This is more like a bug fix version.</p>
+                    <a class="btn btn-default btn-xs" href="http://gm.lv/en/code-cards-v12.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="http://gm.lv/en/iphone-and-andorid-development.html">iPhone and Andorid development</a></h2>
+                <span class="published">
+                    <i class="fa fa-calendar"></i>
+                    <time datetime="2011-01-07T13:33:00+02:00"> 2011-01-07</time>
+                </span>
+                <div class="summary"><p>This has been a very busy month. I even don't know where to start. Yes, I have made an iPhone app and it is published, but lets start with one other thing.</p>
+<p>Besides my day job I have started to work for a new, amazing startup called "Fracture" (<a href="http://www.fractureme.com/">http://www.fractureme.com/</a> ). Currently it is more like a freelancer job for various tasks. As I already mentioned it is a new startup run by Alex Theodore and Abhi Lokesh. The whole story about how the idea showed up and on you can read in <a href="http://www.fractureme.com/fracture-digital-printing-company">About</a>  section, if you are interested. What they do is, they print pictures on a glass. Then they put a simple handling hole behind it, pack it in <a href="http://www.fractureme.com/blog/2010/01/21/fracture-crash-and-safety-testing-we-passed/">a very resistant package</a> and ship it to you. They will even add a screw so you can put it on the wall right away. We ordered one fracture as an example and it was so cool so I decided to apply for php position there. They agreed and in this little time I have learned some new …</p>
+                    <a class="btn btn-default btn-xs" href="http://gm.lv/en/iphone-and-andorid-development.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="http://gm.lv/en/classics.html">Classics</a></h2>
+                <span class="published">
+                    <i class="fa fa-calendar"></i>
+                    <time datetime="2010-12-06T23:04:00+02:00"> 2010-12-06</time>
+                </span>
+                <div class="summary"><p>Today I woke up with classics dinging my mind. This one somehow represents my mood today:</p>
+                    <a class="btn btn-default btn-xs" href="http://gm.lv/en/classics.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="http://gm.lv/en/some-tabs.html">Some tabs</a></h2>
+                <span class="published">
+                    <i class="fa fa-calendar"></i>
+                    <time datetime="2010-12-06T11:26:00+02:00"> 2010-12-06</time>
+                </span>
+                <div class="summary"><p><a href="http://getfile8.posterous.com/getfile/files.posterous.com/gmlv/dt4TfnIhedKlYu9pEJvlYrEzZsPOD3G6xDSKdzFUxl3zrCSHt943pKMrkx18/Screen_shot_2010-12-06_at_9.19.png.scaled.1000.jpg"><img alt="Screen_shot_2010-12-06_at_9" src="http://getfile9.posterous.com/getfile/files.posterous.com/gmlv/Q5AzY3buX8shFAlhKOtzWszYOmV0H1gnuQWaGy7s4MmdAPgApXCQXOYo34Mo/Screen_shot_2010-12-06_at_9.19.png.scaled696.png"> </a></p>
+<p>Some of them are opened all the time (e-mail, blog, etc), some are samples and forums about objective-c and iphone sdk stuff. Some are left open to read them later.</p>
+                    <a class="btn btn-default btn-xs" href="http://gm.lv/en/some-tabs.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="http://gm.lv/en/status-updates.html">Status updates</a></h2>
+                <span class="published">
+                    <i class="fa fa-calendar"></i>
+                    <time datetime="2010-11-24T00:30:00+02:00"> 2010-11-24</time>
+                </span>
+                <div class="summary"><p>Time to time I post latest updates on my life. I don't think I'm a good writer, but I hope these posts will be available when I will be old, so I can remember this all much easier. (I am planning to write my biography at some point:))</p>
+<p>I actually started this post some month ago, but it stuck somewhere between "have no time to write it" and "have no inspiration to write it". What is happening lately?</p>
+<p>As you already know it I almost burned my MacBook down. It was on Halloween evening, coincidence? :)</p>
+<p>Louise now are 10 months old. She is so gorgeous, although it seems, that she will be very stubborn girl. It is actually not a bad thing, just have to direct hers stubbornness into right direction. Now she have 5 teeth. She gets very serious when exploring things. She is so cute when she is so serious. Also new words and expressions are jumping out every week. It is a great thing watching her grow up.</p>
+<p>In professional area I have developed my first iPhone …</p>
+                    <a class="btn btn-default btn-xs" href="http://gm.lv/en/status-updates.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="http://gm.lv/en/the-new-dork.html">The new dork</a></h2>
+                <span class="published">
+                    <i class="fa fa-calendar"></i>
+                    <time datetime="2010-11-16T20:52:00+02:00"> 2010-11-16</time>
+                </span>
+                <div class="summary"><p>This is also not a new one, but it is also nice made.</p>
+                    <a class="btn btn-default btn-xs" href="http://gm.lv/en/the-new-dork.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+
+        <ul class="pagination">
+                <li class="prev"><a href="http://gm.lv/en/category/sakums.html">&laquo;</a>
+                </li>
+                    <li class=""><a
+                            href="http://gm.lv/en/category/sakums.html">1</a></li>
+                    <li class="active"><a
+                            href="http://gm.lv/en/category/sakums2.html">2</a></li>
+                    <li class=""><a
+                            href="http://gm.lv/en/category/sakums3.html">3</a></li>
+                    <li class=""><a
+                            href="http://gm.lv/en/category/sakums4.html">4</a></li>
+                    <li class=""><a
+                            href="http://gm.lv/en/category/sakums5.html">5</a></li>
+                    <li class=""><a
+                            href="http://gm.lv/en/category/sakums6.html">6</a></li>
+                    <li class=""><a
+                            href="http://gm.lv/en/category/sakums7.html">7</a></li>
+                    <li class=""><a
+                            href="http://gm.lv/en/category/sakums8.html">8</a></li>
+                <li class="next"><a
+                        href="http://gm.lv/en/category/sakums3.html">&raquo;</a></li>
+        </ul>
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+
+<section class="well well-sm">
+    <ul class="list-group list-group-flush">
+            <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+              <ul class="list-group" id="social">
+                <li class="list-group-item"><a href="https://www.facebook.com/gintsmurans" target="_blank"><i class="fa fa-facebook-square fa-lg"></i> facebook</a></li>
+                <li class="list-group-item"><a href="https://www.instagram.com/gintsmurans/" target="_blank"><i class="fa fa-instagram fa-lg"></i> instagram</a></li>
+                <li class="list-group-item"><a href="http://github.com/gintsmurans" target="_blank"><i class="fa fa-github-square fa-lg"></i> github</a></li>
+              </ul>
+            </li>
+
+
+
+
+
+    <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+      <ul class="list-group" id="links">
+        <li class="list-group-item">
+            <a href="https://4apps.lv/products" target="_blank">
+                4Apps
+            </a>
+        </li>
+      </ul>
+    </li>
+    </ul>
+</section>
+            </aside>
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2012 Gints Murāns
+            &middot; Powered by <a href="https://github.com/getpelican/pelican" target="_blank">Pelican</a>              <p><small>  <a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="//i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+    Content
+  licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>, except where indicated otherwise.
+</small></p>
+
+         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="http://gm.lv/en/../theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="http://gm.lv/en/../theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="http://gm.lv/en/../theme/js/respond.min.js"></script>
+
+    <!-- Disqus -->
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'dzivoklis'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script');
+            s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
+    <!-- End Disqus Code -->
+<script async defer data-domain="gm.lv" src="https://tr.4apps.lv/js/plausible.js"></script>
+</body>
+</html>
