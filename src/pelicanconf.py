@@ -65,6 +65,7 @@ LINKS = (
 
 # Social widget
 SOCIAL = (
+    ('mastodon', 'https://masto.ai/@gintsmurans'),
     ('facebook', 'https://www.facebook.com/gintsmurans'),
     ('instagram', 'https://www.instagram.com/gintsmurans/', 'instagram'),
     ('github', 'http://github.com/gintsmurans'),
