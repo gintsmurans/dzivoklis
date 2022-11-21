@@ -104,7 +104,7 @@ GM            </a>
                 </div>
                 <p>It turns out, that navigation bar back button is set from parent controller that pushed new view controller. So if you want to hide back button you have to hide it in first view controller and then push the new one.</p>
 <p>But if you have many places where you need to push new view controllers and have back button, but only one place where it needs to be set it is not very efficient to set it every time to not hidden. The solution is this code called from view controller pushed:</p>
-<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="nb">self</span><span class="p">.</span><span class="n">navigationController</span><span class="p">.</span><span class="n">parentViewController</span><span class="p">.</span><span class="n">navigationItem</span> <span class="nl">setHidesBackButton</span><span class="p">:</span><span class="nb">YES</span><span class="p">];</span>
+<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="nb">self</span><span class="p">.</span><span class="n">navigationController</span><span class="p">.</span><span class="n">parentViewController</span><span class="p">.</span><span class="n">navigationItem</span><span class="w"> </span><span class="n">setHidesBackButton</span><span class="o">:</span><span class="nb">YES</span><span class="p">];</span><span class="w"></span>
 </code></pre></div>
 
 <p>Don't forget to show it when view disapears.</p>
@@ -151,9 +151,10 @@ GM            </a>
     <ul class="list-group list-group-flush">
             <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
               <ul class="list-group" id="social">
-                <li class="list-group-item"><a href="https://www.facebook.com/gintsmurans" target="_blank"><i class="fa fa-facebook-square fa-lg"></i> facebook</a></li>
-                <li class="list-group-item"><a href="https://www.instagram.com/gintsmurans/" target="_blank"><i class="fa fa-instagram fa-lg"></i> instagram</a></li>
-                <li class="list-group-item"><a href="http://github.com/gintsmurans" target="_blank"><i class="fa fa-github-square fa-lg"></i> github</a></li>
+                <li class="list-group-item"><a href="https://masto.ai/@gintsmurans" rel="me" target="_blank"><i class="fa fa-mastodon-square fa-lg"></i> mastodon</a></li>
+                <li class="list-group-item"><a href="https://www.facebook.com/gintsmurans" rel="me" target="_blank"><i class="fa fa-facebook-square fa-lg"></i> facebook</a></li>
+                <li class="list-group-item"><a href="https://www.instagram.com/gintsmurans/" rel="me" target="_blank"><i class="fa fa-instagram fa-lg"></i> instagram</a></li>
+                <li class="list-group-item"><a href="http://github.com/gintsmurans" rel="me" target="_blank"><i class="fa fa-github-square fa-lg"></i> github</a></li>
               </ul>
             </li>
 
@@ -221,8 +222,7 @@ GM            </a>
       </ul>
     </li>
     </ul>
-</section>
-            </aside>
+</section>            </aside>
         </div>
     </div>
 </div>

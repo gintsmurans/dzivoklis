@@ -104,21 +104,21 @@ GM            </a>
                 </div>
                 <p>Meklējot informāciju par "frameworkiem" atradu šo komentāru:</p>
 <p>"I want to slap the a$$ who came up with OOP. You keep telling yourself that it’s better than procedural code while you jerk off to that abstract object. While you’re still trying to fit everything into objects, I’m already done writing an application and have already started a new one.</p>
-<div class="highlight"><pre><span></span><code><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">?</span><span class="n">php</span>
-<span class="o">//</span><span class="n">OOP</span>
-<span class="k">class</span> <span class="n">helloWorld</span> <span class="err">{</span>
-<span class="k">function</span> <span class="n">myPrint</span><span class="p">()</span> <span class="err">{</span>
-<span class="n">print</span> <span class="err">“</span><span class="n">Hello</span><span class="p">,</span> <span class="n">world</span><span class="p">.</span><span class="err">”</span><span class="p">;</span>
-<span class="err">}</span>
-<span class="err">}</span>
-<span class="err">$</span><span class="n">myHelloWorld</span> <span class="o">=</span> <span class="k">new</span> <span class="n">helloWorld</span><span class="p">();</span>
-<span class="err">$</span><span class="n">myHelloWorld</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">myPrint</span><span class="p">();</span>
-<span class="o">?&amp;</span><span class="n">gt</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code>&amp;lt;?php
+//OOP
+class helloWorld {
+function myPrint() {
+print “Hello, world.”;
+}
+}
+$myHelloWorld = new helloWorld();
+$myHelloWorld-&amp;gt;myPrint();
+?&amp;gt;
 
-<span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">?</span><span class="n">php</span>
-<span class="o">//</span><span class="k">Procedural</span>
-<span class="n">print</span> <span class="err">“</span><span class="n">Hello</span><span class="p">,</span> <span class="n">world</span><span class="p">.</span><span class="err">”</span><span class="p">;</span>
-<span class="o">?&amp;</span><span class="n">gt</span><span class="p">;</span>
+&amp;lt;?php
+//Procedural
+print “Hello, world.”;
+?&amp;gt;
 </code></pre></div>
 
 <p>WTF??"</p>
@@ -166,9 +166,10 @@ GM            </a>
     <ul class="list-group list-group-flush">
             <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
               <ul class="list-group" id="social">
-                <li class="list-group-item"><a href="https://www.facebook.com/gintsmurans" target="_blank"><i class="fa fa-facebook-square fa-lg"></i> facebook</a></li>
-                <li class="list-group-item"><a href="https://www.instagram.com/gintsmurans/" target="_blank"><i class="fa fa-instagram fa-lg"></i> instagram</a></li>
-                <li class="list-group-item"><a href="http://github.com/gintsmurans" target="_blank"><i class="fa fa-github-square fa-lg"></i> github</a></li>
+                <li class="list-group-item"><a href="https://masto.ai/@gintsmurans" rel="me" target="_blank"><i class="fa fa-mastodon-square fa-lg"></i> mastodon</a></li>
+                <li class="list-group-item"><a href="https://www.facebook.com/gintsmurans" rel="me" target="_blank"><i class="fa fa-facebook-square fa-lg"></i> facebook</a></li>
+                <li class="list-group-item"><a href="https://www.instagram.com/gintsmurans/" rel="me" target="_blank"><i class="fa fa-instagram fa-lg"></i> instagram</a></li>
+                <li class="list-group-item"><a href="http://github.com/gintsmurans" rel="me" target="_blank"><i class="fa fa-github-square fa-lg"></i> github</a></li>
               </ul>
             </li>
 
@@ -186,8 +187,7 @@ GM            </a>
       </ul>
     </li>
     </ul>
-</section>
-            </aside>
+</section>            </aside>
         </div>
     </div>
 </div>

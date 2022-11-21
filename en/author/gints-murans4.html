@@ -169,59 +169,56 @@ Me and my wife we both decided to go for sony, but I couldn't find it in any LV 
                 </span>
                 <div class="summary"><p>For one website I am working on I wanted to configure nginx so that when user is not logged in, site is taken from nginx cache, but when user is logged in, the site is loading from wordpress directly. Because of performance, of course. :) And also I had an requirement from IT Risks of my organization that wp-admin is accessible only from our network.</p>
 <p>Here is the configuration file for a virtual host:</p>
-<div class="highlight"><pre><span></span><code>  <span class="err">#</span> <span class="nt">www</span><span class="p">.</span><span class="nc">domain</span><span class="p">.</span><span class="nc">lv</span>
-<span class="nt">server</span> <span class="p">{</span>
-    <span class="err">listen</span>       <span class="err">80</span> <span class="err">default</span><span class="p">;</span>
-    <span class="err">server_name</span>  <span class="err">www.domain.lv</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="p">#</span><span class="w"> </span><span class="n">www</span><span class="p">.</span><span class="n">domain</span><span class="p">.</span><span class="n">lv</span><span class="w"></span>
+<span class="n">server</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">listen</span><span class="w">       </span><span class="mh">80</span><span class="w"> </span><span class="k">default</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">server_name</span><span class="w">  </span><span class="n">www</span><span class="p">.</span><span class="n">domain</span><span class="p">.</span><span class="n">lv</span><span class="p">;</span><span class="w"></span>
 
-    <span class="err">root</span> <span class="err">/path_to_root</span><span class="p">;</span>
-    <span class="err">index</span> <span class="err">index.php</span> <span class="err">index.html</span><span class="p">;</span>
+<span class="w">    </span><span class="n">root</span><span class="w"> </span><span class="o">/</span><span class="n">path_to_root</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">index</span><span class="w"> </span><span class="n">index</span><span class="p">.</span><span class="n">php</span><span class="w"> </span><span class="n">index</span><span class="p">.</span><span class="n">html</span><span class="p">;</span><span class="w"></span>
 
-    <span class="err">charset</span> <span class="err">utf-8</span><span class="p">;</span>
-    <span class="err">error_page</span>  <span class="err">404</span> <span class="err">/index.php</span><span class="p">;</span>
-    <span class="err">access_log</span>  <span class="err">/path_to_log_file</span><span class="p">;</span>
-
-
-    <span class="err">location</span> <span class="err">~</span> <span class="err">(/\.ht)</span> <span class="err">{</span>
-        <span class="err">return</span> <span class="err">404</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="nt">location</span> <span class="o">/</span> <span class="p">{</span>
-      <span class="err">if</span> <span class="err">(-f</span> <span class="err">$request_filename)</span> <span class="err">{</span>
-        <span class="err">expires</span> <span class="err">30d</span><span class="p">;</span>
-        <span class="err">break</span><span class="p">;</span>
-      <span class="p">}</span>
-
-      <span class="nt">try_files</span> <span class="o">$</span><span class="nt">uri</span> <span class="o">$</span><span class="nt">uri</span><span class="o">/</span> <span class="o">/</span><span class="nt">index</span><span class="p">.</span><span class="nc">php</span><span class="o">;</span>
-    <span class="err">}</span>
+<span class="w">    </span><span class="n">charset</span><span class="w"> </span><span class="n">utf</span><span class="o">-</span><span class="mh">8</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">error_page</span><span class="w">  </span><span class="mh">404</span><span class="w"> </span><span class="o">/</span><span class="n">index</span><span class="p">.</span><span class="n">php</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">access_log</span><span class="w">  </span><span class="o">/</span><span class="n">path_to_log_file</span><span class="p">;</span><span class="w"></span>
 
 
-    <span class="nt">location</span> <span class="o">~</span> <span class="o">^/</span><span class="nt">__cached</span><span class="o">/.+</span><span class="err">\</span><span class="p">.</span><span class="nc">php</span><span class="o">$</span> <span class="p">{</span>
-        <span class="err">if</span> <span class="err">($uri</span> <span class="err">~</span> <span class="err">^/__cached/(.+\.php)$)</span>
-        <span class="err">{</span>
-            <span class="err">set</span> <span class="err">$path</span> <span class="err">/$1</span><span class="p">;</span>
-        <span class="p">}</span>
+<span class="w">    </span><span class="n">location</span><span class="w"> </span><span class="o">~</span><span class="w"> </span><span class="p">(</span><span class="o">/</span><span class="n">\.ht)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mh">404</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
 
-        <span class="nt">fastcgi_cache</span> <span class="nt">NAME</span><span class="o">;</span>
-        <span class="nt">fastcgi_cache_valid</span> <span class="nt">any</span> <span class="nt">5m</span><span class="o">;</span>
-        <span class="nt">fastcgi_cache_key</span> <span class="o">$</span><span class="nt">document_root</span><span class="o">$</span><span class="nt">request_uri</span><span class="o">;</span>
-        <span class="nt">fastcgi_cache_use_stale</span> <span class="nt">error</span> <span class="nt">timeout</span> <span class="nt">invalid_header</span> <span class="nt">http_500</span><span class="o">;</span>
-        <span class="nt">fastcgi_ignore_headers</span>  <span class="nt">Cache-Control</span>  <span class="nt">Expires</span><span class="o">;</span>
+<span class="w">    </span><span class="n">location</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">-</span><span class="n">f</span><span class="w"> </span><span class="n">$request_filename</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">expires</span><span class="w"> </span><span class="mh">30</span><span class="n">d</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
 
-        <span class="nt">fastcgi_pass</span>   <span class="nt">127</span><span class="p">.</span><span class="nc">0</span><span class="p">.</span><span class="nc">0</span><span class="p">.</span><span class="nc">1</span><span class="p">:</span><span class="nd">9000</span><span class="o">;</span>
-        <span class="nt">fastcgi_index</span>  <span class="nt">index</span><span class="p">.</span><span class="nc">php</span><span class="o">;</span>
-        <span class="nt">fastcgi_param</span>  <span class="nt">SCRIPT_FILENAME</span>  <span class="o">$</span><span class="nt">document_root</span><span class="o">/$</span><span class="nt">path</span><span class="o">;</span>
-        <span class="nt">fastcgi_split_path_info</span> <span class="o">^(.+</span><span class="err">\</span><span class="p">.</span><span class="nc">php</span><span class="o">)(.*)$;</span>
-        <span class="nt">include</span>        <span class="nt">fastcgi_params</span><span class="o">;</span>
-    <span class="err">}</span>
+<span class="w">      </span><span class="n">try_files</span><span class="w"> </span><span class="n">$uri</span><span class="w"> </span><span class="n">$uri</span><span class="o">/</span><span class="w"> </span><span class="o">/</span><span class="n">index</span><span class="p">.</span><span class="n">php</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
 
 
-    <span class="nt">location</span> <span class="o">~</span> <span class="o">(</span><span class="nt">wp-</span><span class="o">(</span><span class="nt">admin</span><span class="o">/.*|</span><span class="nt">login</span><span class="o">|</span><span class="nt">register</span><span class="o">)</span><span class="err">\</span><span class="p">.</span><span class="nc">php</span><span class="o">$)</span> <span class="p">{</span>
-        <span class="err">if</span> <span class="err">($remote_addr</span> <span class="err">!~</span> <span class="err">xxx\.x\.xx\..+|xxx\.x\.xx\..+|xxx\.xxx\.xxx\..+){</span>
-            <span class="err">return</span> <span class="err">404</span><span class="p">;</span>
-        <span class="p">}</span>
+<span class="w">    </span><span class="n">location</span><span class="w"> </span><span class="o">~</span><span class="w"> </span><span class="o">^/</span><span class="n">__cached</span><span class="o">/</span><span class="p">.</span><span class="o">+</span><span class="n">\.php$</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">$uri</span><span class="w"> </span><span class="o">~</span><span class="w"> </span><span class="o">^/</span><span class="n">__cached</span><span class="o">/</span><span class="p">(.</span><span class="o">+</span><span class="n">\.php)$)</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="n">set</span><span class="w"> </span><span class="n">$path</span><span class="w"> </span><span class="o">/</span><span class="err">$</span><span class="mh">1</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
 
-        <span class="nt">if</span> <span class="o">(!</span><span class="nt">-f</span> <span class="o">$</span><span class="nt">request_filename …</span></code></pre></div>
+<span class="w">        </span><span class="n">fastcgi_cache</span><span class="w"> </span><span class="n">NAME</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">fastcgi_cache_valid</span><span class="w"> </span><span class="n">any</span><span class="w"> </span><span class="mh">5</span><span class="n">m</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">fastcgi_cache_key</span><span class="w"> </span><span class="n">$document_root$request_uri</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">fastcgi_cache_use_stale</span><span class="w"> </span><span class="n">error</span><span class="w"> </span><span class="n">timeout</span><span class="w"> </span><span class="n">invalid_header</span><span class="w"> </span><span class="n">http_500</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">fastcgi_ignore_headers</span><span class="w">  </span><span class="n">Cache</span><span class="o">-</span><span class="n">Control</span><span class="w">  </span><span class="n">Expires</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">        </span><span class="n">fastcgi_pass</span><span class="w">   </span><span class="mf">127.0.0.1</span><span class="o">:</span><span class="mh">9000</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">fastcgi_index</span><span class="w">  </span><span class="n">index</span><span class="p">.</span><span class="n">php</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">fastcgi_param</span><span class="w">  </span><span class="n">SCRIPT_FILENAME</span><span class="w">  </span><span class="n">$document_root</span><span class="o">/</span><span class="n">$path</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">fastcgi_split_path_info</span><span class="w"> </span><span class="o">^</span><span class="p">(.</span><span class="o">+</span><span class="n">\.php)(.*)$;</span><span class="w"></span>
+<span class="w">        </span><span class="n">include</span><span class="w">        </span><span class="n">fastcgi_params</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="w">    </span><span class="n">location</span><span class="w"> </span><span class="o">~</span><span class="w"> </span><span class="p">(</span><span class="n">wp</span><span class="o">-</span><span class="p">(</span><span class="n">admin</span><span class="o">/</span><span class="p">.</span><span class="o">*|</span><span class="n">login</span><span class="o">|</span><span class="n">register</span><span class="p">)</span><span class="n">\.php$)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">$remote_addr</span><span class="w"> </span><span class="o">!~</span><span class="w"> </span><span class="n">xxx\.x\.xx\..+|xxx\.x\.xx\..+|xxx\.xxx\.xxx\..+){</span><span class="w"></span>
+<span class="w">            </span><span class="k">return …</span></code></pre></div>
                     <a class="btn btn-default btn-xs" href="https://gm.lv/en/nginx-caching-by-cookie.html">more ...</a>
                 </div>
             </article>
@@ -307,9 +304,10 @@ Though there are some issues. For example translating is a nice thing, but it is
     <ul class="list-group list-group-flush">
             <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
               <ul class="list-group" id="social">
-                <li class="list-group-item"><a href="https://www.facebook.com/gintsmurans" target="_blank"><i class="fa fa-facebook-square fa-lg"></i> facebook</a></li>
-                <li class="list-group-item"><a href="https://www.instagram.com/gintsmurans/" target="_blank"><i class="fa fa-instagram fa-lg"></i> instagram</a></li>
-                <li class="list-group-item"><a href="http://github.com/gintsmurans" target="_blank"><i class="fa fa-github-square fa-lg"></i> github</a></li>
+                <li class="list-group-item"><a href="https://masto.ai/@gintsmurans" rel="me" target="_blank"><i class="fa fa-mastodon-square fa-lg"></i> mastodon</a></li>
+                <li class="list-group-item"><a href="https://www.facebook.com/gintsmurans" rel="me" target="_blank"><i class="fa fa-facebook-square fa-lg"></i> facebook</a></li>
+                <li class="list-group-item"><a href="https://www.instagram.com/gintsmurans/" rel="me" target="_blank"><i class="fa fa-instagram fa-lg"></i> instagram</a></li>
+                <li class="list-group-item"><a href="http://github.com/gintsmurans" rel="me" target="_blank"><i class="fa fa-github-square fa-lg"></i> github</a></li>
               </ul>
             </li>
 
@@ -327,8 +325,7 @@ Though there are some issues. For example translating is a nice thing, but it is
       </ul>
     </li>
     </ul>
-</section>
-            </aside>
+</section>            </aside>
         </div>
     </div>
 </div>

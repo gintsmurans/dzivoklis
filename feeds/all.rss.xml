@@ -234,21 +234,21 @@ xml failā, lai ielādē bild un html failā sarakstīju lai salādē visus js f
 &lt;p&gt;Tiku cauri ar pamatīgu smaku istabā un diezgan lielu izbrīnu.&lt;/p&gt;
 &lt;p&gt;Padoms. Nemēģiniet sveces tuvumā lietot saspiestu gaisu.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gints Murāns</dc:creator><pubDate>Thu, 07 Feb 2008 06:48:00 +0200</pubDate><guid isPermaLink="false">tag:gm.lv,2008-02-07:/tirit-klaviaturu.html</guid><category>Sākums</category><category>2008</category></item><item><title>Alu sieviete</title><link>https://gm.lv/alu-sieviete.html</link><description>&lt;p&gt;Ar šo rakstu esmu šausmīgi aizkavējies. Gribēju uzrakstīt jau ļoti sen, bet visu laiku kaut kā nepieķēros. Tad nu lūk .. bijām aizgājuši uz izrādi Alu sieviete(paldies &lt;a href="http://arturs.jaffa.lv"&gt;Artūram&lt;/a&gt;   par biļetēm). Pirms kāda ilgāka laika rakstīju par &lt;a href="http://nesaprot.net/2007/05/07/alu-cilveks/"&gt;alu cilvēku&lt;/a&gt; , bet šī izrāde ne tuvu nelīdzinās alu cilvēkam. Lai piedod man izrādes režisori, veidotāji un atbalstītāji, bet man nepatika. Ja alu cilvēkā Ainārs Ančevskis atnāca uz skatuves mierīgi stāstīdams par to kā ir un kā nav ar mazu humoru pasmiedamies par sievietēm, tad alu sieviete vienkārši rupji apsmēja vīriešus, visu laiku pieminot zeķes, apakšbikses, seksu un pautu maisu. Protams, ka varēja arī izsmieties, tikai mazliet kaitināja vienas sievietes histēriskie smiekli. Katrā ziņā, ja būtu jāvērtē, tad es dotu 3 GM burtiņus no 5.5 un tomēr iesaku visiem noskatīties, jo šīs abas izrādes ir mazliet savādākas kā pārējās.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gints Murāns</dc:creator><pubDate>Wed, 06 Feb 2008 08:16:00 +0200</pubDate><guid isPermaLink="false">tag:gm.lv,2008-02-06:/alu-sieviete.html</guid><category>Sākums</category><category>2008</category></item><item><title>Dienas komentārs</title><link>https://gm.lv/dienas-komentars.html</link><description>&lt;p&gt;Meklējot informāciju par "frameworkiem" atradu šo komentāru:&lt;/p&gt;
 &lt;p&gt;"I want to slap the a$$ who came up with OOP. You keep telling yourself that it’s better than procedural code while you jerk off to that abstract object. While you’re still trying to fit everything into objects, I’m already done writing an application and have already started a new one.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;lt&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="o"&gt;?&lt;/span&gt;&lt;span class="n"&gt;php&lt;/span&gt;
-&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;OOP&lt;/span&gt;
-&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="n"&gt;helloWorld&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;
-&lt;span class="k"&gt;function&lt;/span&gt; &lt;span class="n"&gt;myPrint&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;
-&lt;span class="n"&gt;print&lt;/span&gt; &lt;span class="err"&gt;“&lt;/span&gt;&lt;span class="n"&gt;Hello&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;world&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="err"&gt;”&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="err"&gt;}&lt;/span&gt;
-&lt;span class="err"&gt;}&lt;/span&gt;
-&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="n"&gt;myHelloWorld&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="n"&gt;helloWorld&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
-&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="n"&gt;myHelloWorld&lt;/span&gt;&lt;span class="o"&gt;-&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;gt&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="n"&gt;myPrint&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
-&lt;span class="o"&gt;?&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;gt&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&amp;amp;lt;?php
+//OOP
+class helloWorld {
+function myPrint() {
+print “Hello, world.”;
+}
+}
+$myHelloWorld = new helloWorld();
+$myHelloWorld-&amp;amp;gt;myPrint();
+?&amp;amp;gt;
 
-&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;lt&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="o"&gt;?&lt;/span&gt;&lt;span class="n"&gt;php&lt;/span&gt;
-&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="k"&gt;Procedural&lt;/span&gt;
-&lt;span class="n"&gt;print&lt;/span&gt; &lt;span class="err"&gt;“&lt;/span&gt;&lt;span class="n"&gt;Hello&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;world&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="err"&gt;”&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="o"&gt;?&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;gt&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&amp;amp;lt;?php
+//Procedural
+print “Hello, world.”;
+?&amp;amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;WTF??"&lt;/p&gt;
