@@ -1,0 +1,37 @@
+{
+	"name": "Blog thing",
+	"dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
+    "service": "develop",
+	"runServices": [
+        "develop"
+    ],
+    "shutdownAction": "none",
+    "workspaceFolder": "/srv/project",
+	"customizations": {
+        "vscode": {
+            "settings": {
+                "remote.autoForwardPorts": false,
+
+                "python.defaultInterpreterPath": "/srv/venv/bin/python3",
+                "python.languageServer": "Pylance",
+                "python.analysis.typeCheckingMode": "strict",
+                "python.analysis.autoImportCompletions": true,
+                "[python]": {
+                    "editor.formatOnSave": true,
+                    "editor.defaultFormatter": "ms-python.black-formatter"
+                }
+            },
+            "extensions": [
+                "ms-python.python", // Python
+                "ms-python.vscode-pylance", // Python autocomplete
+                "ms-python.black-formatter", // Python formatter
+                "github.copilot", // Github co-pilot
+                "aaron-bond.better-comments", // To highlight some comments
+                "tamasfe.even-better-toml", // TOML formatter
+                "github.vscode-github-actions" // Github actions
+            ]
+        }
+    }
+}

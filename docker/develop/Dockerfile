@@ -8,8 +8,9 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update -yq \
     && apt-get install -yq apt-utils
 
-RUN apt-get install -yq apt-transport-https lsb-release ca-certificates \
-        git supervisor locales
+RUN apt-get install -y --no-install-recommends \
+    apt-transport-https lsb-release ca-certificates gnupg \
+    locales git less nano curl wget zip unzip tree
 
 # Update locales
 RUN echo "Europe/Riga" > /etc/timezone && \
@@ -20,8 +21,16 @@ RUN echo "Europe/Riga" > /etc/timezone && \
     dpkg-reconfigure --frontend=noninteractive locales && \
     update-locale LANG=en_US.UTF-8
 
-# Install python
-RUN apt-get -yq install python3 python3-pip
+# Install python and service runner
+RUN apt-get install -y --no-install-recommends \
+    python3 python3-venv python3-pip \
+    supervisor
+
+# Create virtualenv
+RUN python3 -m venv /srv/venv
+
+# Activate virtual environment
+ENV PATH="/srv/venv/bin:$PATH"
 
 # Install services python dependecies
 COPY ./data/requirements.txt  /root/requirements.txt
