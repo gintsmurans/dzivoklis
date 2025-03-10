@@ -10,7 +10,8 @@ RUN apt-get update -yq \
 
 RUN apt-get install -y --no-install-recommends \
     apt-transport-https lsb-release ca-certificates gnupg \
-    locales git less nano curl wget zip unzip tree
+    locales less nano curl wget zip unzip tree \
+    git openssh-client
 
 # Update locales
 RUN echo "Europe/Riga" > /etc/timezone && \
