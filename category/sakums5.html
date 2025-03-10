@@ -50,13 +50,14 @@ GM            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
+                         <li><a href="https://gm.lv/pages/about-en.html">
+                             About
+                          </a></li>
                          <li><a href="https://gm.lv/pages/dzivokla-remonts.html">
                              Dzīvokļa remonts
                           </a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="https://gm.lv/">lv</a></li>
-                <li><a href="https://gm.lv/en/">en</a></li>
 
             </ul>
         </div>
@@ -69,128 +70,189 @@ GM            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
-                <h2><a href="https://gm.lv/par-tiem-cilvekiem-2.html">Par tiem cilvēkiem 2</a></h2>
+                <h2><a href="https://gm.lv/nginx-caching-by-cookie-en.html">Nginx caching by cookie</a></h2>
                 <span class="published">
                     <i class="fa fa-calendar"></i>
-                    <time datetime="2008-08-01T08:46:00+03:00"> 2008-08-01</time>
+                    <time datetime="2010-10-05T06:18:00+03:00"> 2010-10-05</time>
                 </span>
-                <div class="summary"><p>Dažreiz es cilvēkus patiešām nesaprotu. Ir daudzas lietas, kas pagaidām man rādās tikai sapņos. Ir dažas tādas lietas par kurām es sapņoju sen un daudz. Viena no tādām varētu būt šāda <a href="http://www.tvnet.lv/zinas/agresivs/article.php?id=554926">Corvette</a>. Tā kā man ļoti iet pie sirds automašīnas, tad par tādu Corvetti es sapņoju dienu un nakti un arī tad, kad sēžu tualetē. Bet dažiem cilvēkiem šādas lietas pat sagādā problēmas. Izlasot rakstu var saprast, ka mašīnas īpašniecei tā īsti nemaz nevajag to Corvetti un viņa būtu ļoti laimīga tiekot no tās vaļā. Bet es turpinu sapņot .. un domāt par to cik pasaule savādi iekārtota.</p>
-<p>Varbūt kāds man grib uzdāvināt kādu līdzīgu/tādu mašīnu? Es pavisam noteikti nosegšu pārrakstīšanas izdevumus. :D</p>
-                    <a class="btn btn-default btn-xs" href="https://gm.lv/par-tiem-cilvekiem-2.html">more ...</a>
+                <div class="summary"><p>For one website I am working on I wanted to configure nginx so that when user is not logged in, site is taken from nginx cache, but when user is logged in, the site is loading from wordpress directly. Because of performance, of course. :) And also I had an requirement from IT Risks of my organization that wp-admin is accessible only from our network.</p>
+<p>Here is the configuration file for a virtual host:</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="err">#</span><span class="w"> </span><span class="nx">www</span><span class="p">.</span><span class="nx">domain</span><span class="p">.</span><span class="nx">lv</span>
+<span class="nx">server</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">listen</span><span class="w">       </span><span class="mi">80</span><span class="w"> </span><span class="k">default</span><span class="p">;</span>
+<span class="w">    </span><span class="nx">server_name</span><span class="w">  </span><span class="nx">www</span><span class="p">.</span><span class="nx">domain</span><span class="p">.</span><span class="nx">lv</span><span class="p">;</span>
+
+<span class="w">    </span><span class="nx">root</span><span class="w"> </span><span class="o">/</span><span class="nx">path_to_root</span><span class="p">;</span>
+<span class="w">    </span><span class="nx">index</span><span class="w"> </span><span class="nx">index</span><span class="p">.</span><span class="nx">php</span><span class="w"> </span><span class="nx">index</span><span class="p">.</span><span class="nx">html</span><span class="p">;</span>
+
+<span class="w">    </span><span class="nx">charset</span><span class="w"> </span><span class="nx">utf</span><span class="o">-</span><span class="mi">8</span><span class="p">;</span>
+<span class="w">    </span><span class="nx">error_page</span><span class="w">  </span><span class="mi">404</span><span class="w"> </span><span class="o">/</span><span class="nx">index</span><span class="p">.</span><span class="nx">php</span><span class="p">;</span>
+<span class="w">    </span><span class="nx">access_log</span><span class="w">  </span><span class="o">/</span><span class="nx">path_to_log_file</span><span class="p">;</span>
+
+
+<span class="w">    </span><span class="nx">location</span><span class="w"> </span><span class="o">~</span><span class="w"> </span><span class="p">(</span><span class="o">/</span><span class="err">\</span><span class="p">.</span><span class="nx">ht</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">404</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="nx">location</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">-</span><span class="nx">f</span><span class="w"> </span><span class="err">$</span><span class="nx">request_filename</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">expires</span><span class="w"> </span><span class="mi">30</span><span class="nx">d</span><span class="p">;</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="w">      </span><span class="p">}</span>
+
+<span class="w">      </span><span class="nx">try_files</span><span class="w"> </span><span class="err">$</span><span class="nx">uri</span><span class="w"> </span><span class="err">$</span><span class="nx">uri</span><span class="o">/</span><span class="w"> </span><span class="o">/</span><span class="nx">index</span><span class="p">.</span><span class="nx">php</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+
+<span class="w">    </span><span class="nx">location</span><span class="w"> </span><span class="o">~</span><span class="w"> </span><span class="o">^/</span><span class="nx">__cached</span><span class="o">/</span><span class="p">.</span><span class="o">+</span><span class="err">\</span><span class="p">.</span><span class="nx">php</span><span class="err">$</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="err">$</span><span class="nx">uri</span><span class="w"> </span><span class="o">~</span><span class="w"> </span><span class="o">^/</span><span class="nx">__cached</span><span class="o">/</span><span class="p">(.</span><span class="o">+</span><span class="err">\</span><span class="p">.</span><span class="nx">php</span><span class="p">)</span><span class="err">$</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nx">set</span><span class="w"> </span><span class="err">$</span><span class="nx">path</span><span class="w"> </span><span class="o">/</span><span class="err">$</span><span class="mi">1</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="nx">fastcgi_cache</span><span class="w"> </span><span class="nx">NAME</span><span class="p">;</span>
+<span class="w">        </span><span class="nx">fastcgi_cache_valid</span><span class="w"> </span><span class="nx">any</span><span class="w"> </span><span class="mi">5</span><span class="nx">m</span><span class="p">;</span>
+<span class="w">        </span><span class="nx">fastcgi_cache_key</span><span class="w"> </span><span class="err">$</span><span class="nx">document_root</span><span class="err">$</span><span class="nx">request_uri</span><span class="p">;</span>
+<span class="w">        </span><span class="nx">fastcgi_cache_use_stale</span><span class="w"> </span><span class="nx">error</span><span class="w"> </span><span class="nx">timeout</span><span class="w"> </span><span class="nx">invalid_header</span><span class="w"> </span><span class="nx">http_500</span><span class="p">;</span>
+<span class="w">        </span><span class="nx">fastcgi_ignore_headers</span><span class="w">  </span><span class="nx">Cache</span><span class="o">-</span><span class="nx">Control</span><span class="w">  </span><span class="nx">Expires</span><span class="p">;</span>
+
+<span class="w">        </span><span class="nx">fastcgi_pass</span><span class="w">   </span><span class="m m-Double">127.0.0.1</span><span class="p">:</span><span class="mi">9000</span><span class="p">;</span>
+<span class="w">        </span><span class="nx">fastcgi_index</span><span class="w">  </span><span class="nx">index</span><span class="p">.</span><span class="nx">php</span><span class="p">;</span>
+<span class="w">        </span><span class="nx">fastcgi_param</span><span class="w">  </span><span class="nx">SCRIPT_FILENAME</span><span class="w">  </span><span class="err">$</span><span class="nx">document_root</span><span class="o">/</span><span class="err">$</span><span class="nx">path</span><span class="p">;</span>
+<span class="w">        </span><span class="nx">fastcgi_split_path_info</span><span class="w"> </span><span class="o">^</span><span class="p">(.</span><span class="o">+</span><span class="err">\</span><span class="p">.</span><span class="nx">php</span><span class="p">)(.</span><span class="o">*</span><span class="p">)</span><span class="err">$</span><span class="p">;</span>
+<span class="w">        </span><span class="nx">include</span><span class="w">        </span><span class="nx">fastcgi_params</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+
+<span class="w">    </span><span class="nx">location</span><span class="w"> </span><span class="o">~</span><span class="w"> </span><span class="p">(</span><span class="nx">wp</span><span class="o">-</span><span class="p">(</span><span class="nx">admin</span><span class="o">/</span><span class="p">.</span><span class="o">*|</span><span class="nx">login</span><span class="o">|</span><span class="nx">register</span><span class="p">)</span><span class="err">\</span><span class="p">.</span><span class="nx">php</span><span class="err">$</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="err">$</span><span class="nx">remote_addr</span><span class="w"> </span><span class="p">!</span><span class="o">~</span><span class="w"> </span><span class="nx">xxx</span><span class="err">\</span><span class="p">.</span><span class="nx">x</span><span class="err">\</span><span class="p">.</span><span class="nx">xx</span><span class="err">\</span><span class="p">..</span><span class="o">+|</span><span class="nx">xxx</span><span class="err">\</span><span class="p">.</span><span class="nx">x</span><span class="err">\</span><span class="p">.</span><span class="nx">xx</span><span class="err">\</span><span class="p">..</span><span class="o">+|</span><span class="nx">xxx</span><span class="err">\</span><span class="p">.</span><span class="nx">xxx</span><span class="err">\</span><span class="p">.</span><span class="nx">xxx</span><span class="err">\</span><span class="p">..</span><span class="o">+</span><span class="p">){</span>
+<span class="w">            </span><span class="k">return …</span></code></pre></div>
+                    <a class="btn btn-default btn-xs" href="https://gm.lv/nginx-caching-by-cookie-en.html">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
-                <h2><a href="https://gm.lv/par-to-vilni.html">Par to vilni</a></h2>
+                <h2><a href="https://gm.lv/build-a-computer-en.html">Build a computer</a></h2>
                 <span class="published">
                     <i class="fa fa-calendar"></i>
-                    <time datetime="2008-08-01T07:08:00+03:00"> 2008-08-01</time>
+                    <time datetime="2010-09-29T06:29:00+03:00"> 2010-09-29</time>
                 </span>
-                <div class="summary"><p>Domāju <a href="http://www.db.lv/Default2.aspx?ArticleID=5e998ce5-5215-426a-adf0-48e2a4dd5cb7&amp;RubricID=fc129459-2144-4659-b7ae-0ea5e1504254&amp;open=four">līdzīgi</a>. :D</p>
-                    <a class="btn btn-default btn-xs" href="https://gm.lv/par-to-vilni.html">more ...</a>
+                <div class="summary"><p>I want to build my own computer.</p>
+<p>With computer I dont mean like usual PC with pheriperals. I mean computer with builtin cpu, memory, disk, etc. Good example is sheevaplug computer, but it is not fully complete for my needs.</p>
+<p>Can somebody suggest me some direction to look for?</p>
+                    <a class="btn btn-default btn-xs" href="https://gm.lv/build-a-computer-en.html">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
-                <h2><a href="https://gm.lv/super-ieteikums.html">Super ieteikums</a></h2>
+                <h2><a href="https://gm.lv/personal-finance-management-en.html">Personal finance management</a></h2>
                 <span class="published">
                     <i class="fa fa-calendar"></i>
-                    <time datetime="2008-07-24T13:25:00+03:00"> 2008-07-24</time>
+                    <time datetime="2010-09-16T05:32:00+03:00"> 2010-09-16</time>
                 </span>
-                <div class="summary"><blockquote>
-<p><strong>Dont take life so seriosly. Youll never get out of it alive.</strong></p>
+                <div class="summary"><p>This one looks really cool: <a href="https://indinero.com">https://indinero.com</a> . Unfortunately in country like mine I can only get paypal to play with. It is in early stages and need some improvements (for invoicing, for example), but it looks promising.</p>
+                    <a class="btn btn-default btn-xs" href="https://gm.lv/personal-finance-management-en.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="https://gm.lv/squirrel-what-are-you-doing-en.html">Squirrel! What are you doing?</a></h2>
+                <span class="published">
+                    <i class="fa fa-calendar"></i>
+                    <time datetime="2010-09-14T15:18:00+03:00"> 2010-09-14</time>
+                </span>
+                <div class="summary"><p><img alt="Img_0641" src="http://getfile5.posterous.com/getfile/files.posterous.com/gmlv/99QUxBDyPEOtsF0MBvo356NkSFUSijCoAn2xDwiHQieQSu0PNfnbbcTwbsWq/IMG_0641.jpg.scaled696.jpg"></p>
+                    <a class="btn btn-default btn-xs" href="https://gm.lv/squirrel-what-are-you-doing-en.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="https://gm.lv/invoicing-en.html">Invoicing</a></h2>
+                <span class="published">
+                    <i class="fa fa-calendar"></i>
+                    <time datetime="2010-08-24T17:13:00+03:00"> 2010-08-24</time>
+                </span>
+                <div class="summary"><p>This currently is the best invoicing app I have discovered <a href="http://www.getharvest.com/">http://www.getharvest.com/</a></p>
+<p>&#13;</p>
+<p><strong>Updated!</strong></p>
+<p>&#13;
+Though there are some issues. For example translating is a nice thing, but it is global not per invoice. Mostly I need invoices in Latvian, but if I will need it in english I will have to translate it back and forth.</p>
+                    <a class="btn btn-default btn-xs" href="https://gm.lv/invoicing-en.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="https://gm.lv/finding-a-damn-good-wysiwyg-editor-en.html">Finding a damn good wysiwyg editor</a></h2>
+                <span class="published">
+                    <i class="fa fa-calendar"></i>
+                    <time datetime="2010-08-19T01:08:00+03:00"> 2010-08-19</time>
+                </span>
+                <div class="summary"><p>I need to find a good wysiwyg editor for a project i'm currently working on. Here are my thoughts on some of the editors:</p>
+<ul>
+<li><a href="http://tinymce.moxiecode.com/">TinyMCE</a> : feature full editor, but it seems a bit messy with a lot of files. Implementing is also not very nice and friendly. Earlier I have experianced some problems validating html code.</li>
+<li>FCKEditor / <a href="http://ckeditor.com/">CKEditor</a> : Some years ago it was called FCKEditor, now I see that they have renamed it to CKEditor. I have used this one quite successfully. This is definitely better that TinyCME. Just downloaded the source code and I see that download package consists of 579 files. Wow! I need some simple wysiwyg editor, not this huge. And directory structure is really messed up.</li>
+<li><a href="http://markitup.jaysalvat.com/home/">markItUp</a> : 40 files - much better. Actually this is very interesting editor, althought it is not quite wysiwyg one. Judging from the example I have to replace "\n" to "&lt;br /&gt;" within my code. I don't want to do that. And also for average user html code will not be easy to handle. On other hand pasting documents from word and websites …</li></ul>
+                    <a class="btn btn-default btn-xs" href="https://gm.lv/finding-a-damn-good-wysiwyg-editor-en.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="https://gm.lv/port-forwarding-en.html">Port forwarding</a></h2>
+                <span class="published">
+                    <i class="fa fa-calendar"></i>
+                    <time datetime="2010-08-16T23:43:00+03:00"> 2010-08-16</time>
+                </span>
+                <div class="summary"><p>Yestereday it wasn't very creative day at work so I took a work with me using usb flash drive.</p>
+<p>At work we have some paranoid IT security people who wont let us work from home, so if I want to do it, I have to copy source code onto the flash drive and setup similar configuration on my home computer. It is not the first time, so no problems with configuration, but copying, archiving, copying, unarchiving is a quite booring process. So I was thinking: "Is it possible to get to our work development server?". Asking for an access to IT is not an option in this case.</p>
+<p>Then I remebered about port forwarding. Is it possible to connect to some server, create tunnel from connecting side and connect to this tunnel from other side? Of course it is possible. I guess I did know it before, just somehow haven't thought about it. What I need was a server. I can't use any server, again because of strict IT policy, but recently we rent a new server outside of our …</p>
+                    <a class="btn btn-default btn-xs" href="https://gm.lv/port-forwarding-en.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="https://gm.lv/letter-from-google-analytics-en.html">Letter from google analytics</a></h2>
+                <span class="published">
+                    <i class="fa fa-calendar"></i>
+                    <time datetime="2010-08-10T23:20:00+03:00"> 2010-08-10</time>
+                </span>
+                <div class="summary"><p>Today I received an email from google analytics team. It makes me feel kind of proud. :)</p>
+<blockquote>
+<p>Hello,
+We love that you love our product and use it as much as you do. We have observed however, that a website you are tracking with Google Analytics is sending over 1 million hits per day to Google Analytics servers. This is well above the "5 million pageviews per month per account" limit specified in the <a href="http://www.google.com/analytics/tos.html">Google Analytics Terms of Service</a> . Processing this amount of data multiple times a day takes up valuable resources that enable us to continue to develop the product for all Google Analytics users.
+As such, starting August 23rd, 2010, the metrics in your reports will be updated once a day, as opposed to multiple times during the course of the day. You will continue to receive all the reports and features in Google Analytics as usual. The only change will be that data for a given day will appear the following day.
+We trust you understand the reasons for this change.
+Regards,
+Your Google Analytics Team</p>
 </blockquote>
-<p>Atradu kaut kur pa forumiem.</p>
-                    <a class="btn btn-default btn-xs" href="https://gm.lv/super-ieteikums.html">more ...</a>
+<p>Getting data …</p>
+                    <a class="btn btn-default btn-xs" href="https://gm.lv/letter-from-google-analytics-en.html">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
-                <h2><a href="https://gm.lv/par-to-pasakumu-open-gallery.html">Par to pasākumu (Open gallery)</a></h2>
+                <h2><a href="https://gm.lv/just-rode-30km-on-a-bicycle-en.html">Just rode 30km on a bicycle</a></h2>
                 <span class="published">
                     <i class="fa fa-calendar"></i>
-                    <time datetime="2008-07-21T13:53:00+03:00"> 2008-07-21</time>
+                    <time datetime="2010-08-04T10:04:00+03:00"> 2010-08-04</time>
                 </span>
-                <div class="summary"><p>Par pasākumu kopumā man gribas teikt tikai labus vārdus. Uģis tiešām bija pacenties un izskatījās tas viss ļoti smuki. Vienīgi žēl, ka nepaņēmu līdzi foto kameru. Dažas bildes gan var aplūkot <a href="http://www.smiltenite.lv/lv/node/1602">šeit</a>, tikai diezgan sliktā kvalitātē.</p>
-<p>Viss pasākums notika uz tepera ezera mazās saliņas, kur bija uzstutētas divas skatuves. Visapkārt saliņai bija aplikti celtniecības nožogojumi, kā arī tādi paši uz tilta, kas tiešām lika domāt par to, ka par pasākumu ir padomāts, nevis vienkārši uzstutēta būda, kur iedzīts dj. Ienākot teritorijā pretī pavērās skats uz ūdeni, kurā atspīdēja gaismas no lielās skatuves, kā arī apkārt izvietotās lāpas, kas kopā izskatījās nudien romantiski.</p>
-<p>Par mūziku.</p>
-<p>Pirmās mūzikas skaņas klausījāmies no ezera otras puses, pie kartingtrases, skatoties kā mitsubishi, 2xsubari, golfs un bmw trennējas rītdienas eiropas sacensībām. Skanēja tāds viegls soulfull house, tieši tāds kā man patīk. Vēlāk devāmies uz otru krastu uz pašu pasākumu. No sākuma ar mīļumu nevarējām izdomāt iet vai neiet, bet <a href="http://djmcleods.blogspot.com">mc</a> pierunāja - nenožēloju, ka piekritām. Vienu brīdi gan likās, ka baigais sviests, jo mūzika pamainījās no soulful uz bum-bum house, kas kaut kā pavisam negāja pie sirds …</p>
-                    <a class="btn btn-default btn-xs" href="https://gm.lv/par-to-pasakumu-open-gallery.html">more ...</a>
+                <div class="summary"><p><img alt="Img_0004" src="/images/rixBcHixDEfdIfdxvmzBCoFFpwlkIthDsgyIhzFxktCJluwpiosrhbIBrdCf_IMG_0004.jpg.scaled696.jpg"></p>
+<p>Now have to gain some energy. :)</p>
+                    <a class="btn btn-default btn-xs" href="https://gm.lv/just-rode-30km-on-a-bicycle-en.html">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
-                <h2><a href="https://gm.lv/aizdomajos.html">Aizdomājos</a></h2>
+                <h2><a href="https://gm.lv/mongodb-finding-max-value-en.html">MongoDB finding max value</a></h2>
                 <span class="published">
                     <i class="fa fa-calendar"></i>
-                    <time datetime="2008-07-21T13:04:00+03:00"> 2008-07-21</time>
+                    <time datetime="2010-08-03T23:11:00+03:00"> 2010-08-03</time>
                 </span>
-                <div class="summary"><p>Kārtējo reizi aizdomājos par alkohola problēmām. Sāku meklēt informāciju googlē par alkohola lietošanu pasākumos un uzdūros savam <a href="http://nesaprot.net/2007/09/11/alkohols-un-pasakumi/">rakstam</a> . Izlasīju pēdējo komentāru, kuru, starp citu, biju arī pirms tam izlasījis, bet šoreiz arī aizdomājos. Par to mazliet vēlāk. Vispirms par alkoholu.</p>
-<p>Par alkoholu man lika aizdomāties sestdien apmeklētais <a href="http://www.smiltenite.lv/lv/node/1602">pasākums</a>. Kā jau parasti šādos pasākumos, arī tur bija aldara "alus būdas", kuras ieraugot atcerējos, ka vienreiz jau aizdomājos par to kāpēc šādos pasākumos tiek tirgots alkohols.</p>
-<p>Es saprotu, ka ir viens ļoti liels iemesls - nauda, jeb ienākumi no alkohola tirdzniecības. Bet! vai tas ir normāli, ka šādos pasākumos praktiski jebkura vecuma cilvēks var dabūt alkoholu? Un bieži vien šāda veida pasākumos tiek iekšā praktiski jebkura vecuma cilvēki un tur bija meitenes, kurām neizskatījās vairāk par 9/10 gadiem.</p>
-<p>Likumā ir rakstīts tā: "Ievērojot šā likuma un citu normatīvo aktu prasības, pašvaldības nosaka  alkoholisko dzērienu mazumtirdzniecības īpašu kārtību izbraukuma tirdzniecībā  sabiedrisko pasākumu norises vietās.", tas nozīmē, ka pašvaldībām ir pilnīga kontrole pār to, kas notiek pasākumos, kas savukārt nozīmē to - jo lielāki ieņēmumi no pasākuma, jo labāk. Tas ir ļoti savādi, it īpaši …</p>
-                    <a class="btn btn-default btn-xs" href="https://gm.lv/aizdomajos.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="https://gm.lv/labaka-vieta-pasaule.html">Labākā vieta pasaulē</a></h2>
-                <span class="published">
-                    <i class="fa fa-calendar"></i>
-                    <time datetime="2008-07-17T06:59:00+03:00"> 2008-07-17</time>
-                </span>
-                <div class="summary"><p>Kura tev būtu labākā vieta pasaulē, kur tieši tu gribētu dzīvot? Neskatoties uz tādām lietām kā ceļa izmaksas, dzīvošanas izmaksas, utt.. Hawaii, Philippines, California, Australia, New Zealand, bet varbūt tevi saista tādas vietas kā Islande?</p>
-                    <a class="btn btn-default btn-xs" href="https://gm.lv/labaka-vieta-pasaule.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="https://gm.lv/jaunums-no-comments-here.html">Jaunums - no comments here :)</a></h2>
-                <span class="published">
-                    <i class="fa fa-calendar"></i>
-                    <time datetime="2008-07-16T17:20:00+03:00"> 2008-07-16</time>
-                </span>
-                <div class="summary"><p><img alt="Media_httpfarm4static_wcfnl" src="http://getfile0.posterous.com/getfile/files.posterous.com/import-wcen/mjbfykuGtcjbGhmhhlgaoChfdnAayiBowrJavlqFEEFjDnhGJgByfzzuqdqt/media_httpfarm4static_wCFnl.jpg.scaled696.jpg"></p>
-                    <a class="btn btn-default btn-xs" href="https://gm.lv/jaunums-no-comments-here.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="https://gm.lv/sports-un-psihologija.html">Sports un psiholoģija</a></h2>
-                <span class="published">
-                    <i class="fa fa-calendar"></i>
-                    <time datetime="2008-05-20T09:16:00+03:00"> 2008-05-20</time>
-                </span>
-                <div class="summary"><p>Tikko radās man tāda interesanta doma. Par ko domā mūsu hokejisti kāpjot uz ledus? Viņi noteikti domā par to kā jāuzvar - pozitīvā gadījumā - savukārrt negatīvā gadījumā: "Nevajag zaudēt .. nevajag zaudēt". Nezinu no kurienes tā, bet man ir radusies sajūta, ka sportisti to visu dara kaut kā nepareizi. Visi ir redzējuši filmas, kur sportists uznāk/uzslido uz sava laukuma, ar tādu iedvesmas pilnu skatienu uz plašumu, kas paveras, kas savukārt rada skatītītājos tādu kā ilūziju, ka tā ir personāža lielā mīlestība, mīlestība pret spēli, spēja to izbaudīt. (man liekas, ka bija kaut kāda filma par jauniešiem - hokejistiem, kur tieši kaut kas līdzīgs bija). Tad nu lūk .. sajūta. Sajūta ir tāda, ka lielākā daļa sportistu neizbauda spēli, kas arī ir pie vainas tam, ka mēs netiekam diezko tālāk tajā visā. No vienas puses var jau saprast to, ka viņiem jādomā ko visa valsts teiks, ja viņi zaudēs, utt, bet, ja viņus tas uztrauc, tad viņi nekad nevinēs.</p>
-<p>Daži citāti:</p>
-<ol>
-<li>
-<p>No filmas The Secret: "Zinātnieki veica  eksperimentu, kurā olimpiskos sportistus palūdza domās veikt tās distances,  kuras viņi parasti veic reāli dzīvē. Visinteresantākais, ka …</p></li></ol>
-                    <a class="btn btn-default btn-xs" href="https://gm.lv/sports-un-psihologija.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="https://gm.lv/parluki.html">Pārlūki</a></h2>
-                <span class="published">
-                    <i class="fa fa-calendar"></i>
-                    <time datetime="2008-05-19T11:15:00+03:00"> 2008-05-19</time>
-                </span>
-                <div class="summary"><p>Nākotne sāk jau izskatīties diezgan cerīga. Jeb tikko uzinstalēju IETester un FireFox 3 RC1. Nezinu kā viņi to ir panākuši, bet ieslēgt firefox pārlūku pagaidām(ar 2x tabiem un bez firebug) ir šausmīgi ātri, savukārt paskatoties aizņemto atmiņu, tas paliek arvien savādāk, jo tiek ielādēti 34mb, bet tas notiek apbrīnojami ātri. Savukārt pie 20 atvērtiem tabiem uzreiz sanāk kopā 120MB, bet, tomēr, tas notiek ātri. Jāpalieto kādu laiciņu, jāpatestē un tad jau manīs.
-Savukārt par IETester. Neskatoties uz to, ka karas un aizņem daudz operatīvās atmiņas, tā tiešām ir ģeniāla programma. Varēja vēl tikai iebūvēt firefox, operas un safari "tabus" un developeris beidzot varētu beigt dzert nervu zāles(tas tā vispārīgi domāts).</p>
-                    <a class="btn btn-default btn-xs" href="https://gm.lv/parluki.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="https://gm.lv/vai-tiesam-palieku-vecs.html">Vai tiešām palieku vecs?</a></h2>
-                <span class="published">
-                    <i class="fa fa-calendar"></i>
-                    <time datetime="2008-05-08T12:29:00+03:00"> 2008-05-08</time>
-                </span>
-                <div class="summary"><p>Šodien pēc sarunas ar kolēģiem par iphone, aizdomājos...</p>
-<p>Pēdējā laikā esmu ievērojis, ka es daudz lietas noliedzu un daudz lietas vispirms padomāju pirms rīkojos. Piemēram par to pašu iphone. Ja agrāk es varētu atļauties, tad vienk. būtu nopircis tikai tāpēc, ka tas ir kaut kas jauns un nenotestēts. Tagad ir tā, ka es īsti neredzu vajadzību priekš multimediju telefona, kurš maksā dārgāk par multifunkcionālu plaukstdatoru ar Windows Mobile 6. Agrāk man noteikti liktos, ka atslēgt taustiņus ar "slaideri" uz "touchscriina" būtu baigi forši, tagad es domāju, ka tikko iemainītajam LG KE820 arī interesanti var atslēgt taustiņus kā arī ielikt 2gb atmiņas karti(20ls?), lai varētu kādu mp3 paklausīties un kam vajag 8gb kā arī tas KE maksā tikai 115ls un ir ultra mazs. Agrāk es biju diezgan konservatīvs uz ēdienu un apģērbu, bet visur citur, it sevišķi, tehnikas jautājumos, baigi patika dažādi jaunumi. Tagad es pat nevaru atcerēties, kad pēdējoreizi būtu meklējis kādu jaunu softu. Vēlviena lieta ir tāda, ka man beidzot, beidzot ir piebesījis un tā pamatīgi, viss kas saistās ar datora pārinstalēšanu un to, ka pēc kāda laika …</p>
-                    <a class="btn btn-default btn-xs" href="https://gm.lv/vai-tiesam-palieku-vecs.html">more ...</a>
+                <div class="summary"><p>Hi,Recently I have started to learn some new stuff. One of them is MongoDB so called “NoSQL” database.What I have learned is that mongoDB is very simple. Running MongoDB and installation of PHP extension for it, took only some 10 minutes. Then fast overview of some source code at php.net manual and we are good to go. If you have some earlier experience with javascript and databases like MySQL, you shouldn’t have any problems with MongoDB. This morning I started to migrate table from MySQL to Mongo and did a mistake. I changed table in MySQL query but did not changed it in Mongo insert. So what I had was two tables in one Mongo collection.Fortunately those tables has some fields that are not in other table, so I came up with this code:</p>
+<div class="highlight"><pre><span></span><code><span class="x">self::$mdb-&gt;i18n-&gt;remove(array(&#39;:where&#39; =&gt; new mongoCode(&#39;return (this.parent == 0 || this.parent &gt; 0) &amp;&amp; typeof this.last_access == &quot;undefined&quot;;&#39;)));</span>
+</code></pre></div>
+
+<p>Where “self::$mdb” is reference to php MongoDB object. I guess: “typeof this.last_access == "undefined”;“ would be just fine, either, but I …</p>
+                    <a class="btn btn-default btn-xs" href="https://gm.lv/mongodb-finding-max-value-en.html">more ...</a>
                 </div>
             </article>
             <hr/>
@@ -246,6 +308,20 @@ Savukārt par IETester. Neskatoties uz to, ka karas un aizņem daudz operatīvā
                             href="https://gm.lv/category/sakums23.html">23</a></li>
                     <li class=""><a
                             href="https://gm.lv/category/sakums24.html">24</a></li>
+                    <li class=""><a
+                            href="https://gm.lv/category/sakums25.html">25</a></li>
+                    <li class=""><a
+                            href="https://gm.lv/category/sakums26.html">26</a></li>
+                    <li class=""><a
+                            href="https://gm.lv/category/sakums27.html">27</a></li>
+                    <li class=""><a
+                            href="https://gm.lv/category/sakums28.html">28</a></li>
+                    <li class=""><a
+                            href="https://gm.lv/category/sakums29.html">29</a></li>
+                    <li class=""><a
+                            href="https://gm.lv/category/sakums30.html">30</a></li>
+                    <li class=""><a
+                            href="https://gm.lv/category/sakums31.html">31</a></li>
                 <li class="next"><a
                         href="https://gm.lv/category/sakums6.html">&raquo;</a></li>
         </ul>
@@ -257,7 +333,7 @@ Savukārt par IETester. Neskatoties uz to, ka karas un aizņem daudz operatīvā
     <ul class="list-group list-group-flush">
             <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
               <ul class="list-group" id="social">
-                <li class="list-group-item"><a href="https://masto.ai/@gintsmurans" rel="me" target="_blank"><i class="fa fa-mastodon-square fa-lg"></i> mastodon</a></li>
+                <li class="list-group-item"><a href="https://mastodon.social/@gintsmurans" rel="me" target="_blank"><i class="fa fa-mastodon-square fa-lg"></i> mastodon</a></li>
                 <li class="list-group-item"><a href="https://www.facebook.com/gintsmurans" rel="me" target="_blank"><i class="fa fa-facebook-square fa-lg"></i> facebook</a></li>
                 <li class="list-group-item"><a href="https://www.instagram.com/gintsmurans/" rel="me" target="_blank"><i class="fa fa-instagram fa-lg"></i> instagram</a></li>
                 <li class="list-group-item"><a href="http://github.com/gintsmurans" rel="me" target="_blank"><i class="fa fa-github-square fa-lg"></i> github</a></li>

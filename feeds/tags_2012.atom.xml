@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>GM - 2012</title><link href="https://gm.lv/" rel="alternate"></link><link href="https://gm.lv/feeds/tags_2012.atom.xml" rel="self"></link><id>https://gm.lv/</id><updated>2012-09-26T13:00:00+03:00</updated><entry><title>PHP error handling</title><link href="https://gm.lv/php-error-handling-en.html" rel="alternate"></link><published>2012-09-26T13:00:00+03:00</published><updated>2012-09-26T13:00:00+03:00</updated><author><name>Gints Murāns</name></author><id>tag:gm.lv,2012-09-26:/php-error-handling-en.html</id><content type="html">&lt;p&gt;You can learn new stuff each day, for example we have just recently turned php errors into exceptions. It is so good, that I decided even to write about it here. Currently we do this only on development environment for safety, because the page code is quite old. Anyways, every php development should do this to get rid of php's annoying error reporting and hopefully make a better product. So enough talking, here is the code:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://gist.github.com/3790196"&gt;https://gist.github.com/3790196&lt;/a&gt;&lt;/p&gt;</content><category term="Sākums"></category><category term="2012"></category></entry><entry><title>PHP/Code Editors</title><link href="https://gm.lv/phpcode-editors-en.html" rel="alternate"></link><published>2012-05-02T03:59:00+03:00</published><updated>2012-05-02T03:59:00+03:00</updated><author><name>Gints Murāns</name></author><id>tag:gm.lv,2012-05-02:/phpcode-editors-en.html</id><summary type="html">&lt;p&gt;In general I need two main features from the code editor. (I will not talk about obvious ones like unicode and unix/win/osx line ending support, fast, good UI, etc) And those are: sftp browser and just a good editor.&lt;/p&gt;
+&lt;p&gt;Nobody seems to ever get it right.&lt;/p&gt;
+&lt;p&gt;TextMate seems to be fast, but lacks sftp support. Same for sublime (which is also just weird editor). Same for Kod. Same for lots of them.&lt;/p&gt;
+&lt;p&gt;Then there are editors with bunch of features, but are so terribly slow or lacks design so much or just can't seem to get some of the features right. For example eclipse and all its crazy movement. Or komodo with its seems-to-be-unfinished sftp panel.&lt;/p&gt;
+&lt;p&gt;Then there are few those that shine out like Espresso and Coda. They are not bad at all, but for example Espresso is kind of slow on my computer and I can't get used to its sftp browser. On the other hand Coda is nicely made and is full of features, but I don't really use them all so from my point …&lt;/p&gt;</summary><content type="html">&lt;p&gt;In general I need two main features from the code editor. (I will not talk about obvious ones like unicode and unix/win/osx line ending support, fast, good UI, etc) And those are: sftp browser and just a good editor.&lt;/p&gt;
+&lt;p&gt;Nobody seems to ever get it right.&lt;/p&gt;
+&lt;p&gt;TextMate seems to be fast, but lacks sftp support. Same for sublime (which is also just weird editor). Same for Kod. Same for lots of them.&lt;/p&gt;
+&lt;p&gt;Then there are editors with bunch of features, but are so terribly slow or lacks design so much or just can't seem to get some of the features right. For example eclipse and all its crazy movement. Or komodo with its seems-to-be-unfinished sftp panel.&lt;/p&gt;
+&lt;p&gt;Then there are few those that shine out like Espresso and Coda. They are not bad at all, but for example Espresso is kind of slow on my computer and I can't get used to its sftp browser. On the other hand Coda is nicely made and is full of features, but I don't really use them all so from my point of view it could be much lighter.&lt;/p&gt;
+&lt;p&gt;But for me Coda seems to be the best of them all. At least as far as I know all is. It would be great if Coda would make a "Coda Lite" version and sell it for like $15-25. $99 is too much for the editor.&lt;/p&gt;
+&lt;p&gt;Ideally it should look like this:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Possibility to add sftp sites like bookmarks or whatever, just without site loading thing to make it faster. It can as well be just a good looking list;&lt;/li&gt;
+&lt;li&gt;SFTP and probably a local file browser, its pretty good as it is already;&lt;/li&gt;
+&lt;li&gt;Preview;&lt;/li&gt;
+&lt;li&gt;Document splitting could be useful;&lt;/li&gt;
+&lt;li&gt;Same editor;&lt;/li&gt;
+&lt;li&gt;Same text possibilities;&lt;/li&gt;
+&lt;li&gt;Same file and syntax highlithing support + bash scripting could be also useful;&lt;/li&gt;
+&lt;li&gt;+Trim trailing whitespace. Maybe even a setting checkbox that would allow to trim trailing whitespace before each save;&lt;/li&gt;
+&lt;li&gt;+A possibility to sort folders before files in a file browser;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;+Lion full screen support&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;No hints, no clips, no validation, no sharing, maybe no code navigator.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;Books: Why? I have opened the tab once.&lt;/li&gt;
+&lt;li&gt;Terminal: OSX have pretty nice terminal application it self.&lt;/li&gt;
+&lt;li&gt;CSS: Its faster to write css value than search for it in all those fields.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If it all makes it work faster then it would be a really great editor.&lt;/p&gt;</content><category term="Sākums"></category><category term="2012"></category></entry></feed>
